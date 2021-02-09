@@ -1,0 +1,33 @@
+{
+  "httpPort": 5488,
+  "store": {
+    "provider": "fs"
+  },
+  "blobStorage": {
+    "provider": "fs"
+  },
+  "logger": {
+    "console": {
+      "transport": "console",
+      "level": "debug"
+    }
+  },
+  "allowLocalFilesAccess": true,
+  "reportTimeout": 60000,
+  "templatingEngines": {
+    "strategy": "http-server"
+  },
+  "extensions": {
+    "authentication": {
+      "cookieSession": {},
+      "admin": {
+        "username": "admin",
+        "password": "password"
+      },
+      "enabled": false
+    },
+    "scripts": {
+      "strategy": "http-server"
+    }
+  }
+}

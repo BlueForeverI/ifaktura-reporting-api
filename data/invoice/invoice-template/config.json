@@ -1,0 +1,37 @@
+{
+    "shortid": "wc2fziPUYS",
+    "name": "invoice-template",
+    "recipe": "chrome-pdf",
+    "engine": "handlebars",
+    "chrome": {
+        "printBackground": false,
+        "mediaType": "screen",
+        "displayHeaderFooter": true,
+        "format": "A4",
+        "marginBottom": "3cm"
+    },
+    "creationDate": {
+        "$$date": 1612813336724
+    },
+    "modificationDate": {
+        "$$date": 1612909249184
+    },
+    "_id": "V9nLh7J1qmpgYWck",
+    "$entitySet": "templates",
+    "data": {
+        "shortid": "Y-NI0EkF3u"
+    },
+    "resources": {
+        "defaultLanguage": "bg",
+        "items": [
+            {
+                "shortid": "vYESP5Ok4c",
+                "entitySet": "data"
+            },
+            {
+                "shortid": "AKcXrq_221",
+                "entitySet": "data"
+            }
+        ]
+    }
+}

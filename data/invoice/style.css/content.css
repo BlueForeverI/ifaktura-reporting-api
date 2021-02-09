@@ -1,0 +1,307 @@
+body {
+    margin: 0;
+}
+.template-wrapper  {
+    padding:10px 0;
+}
+table {
+    font-size: 12px;
+    font-family: "Noto Sans", Helvetica, Arial, sans-serif;
+}
+.template .template-section {
+    margin-bottom: 20px;
+}
+.template .template-section .template-right-column {
+    border-left: 2px solid black;
+}
+
+.template-wrapper .template-footer {
+    bottom: 20px;
+}
+.template {
+    zoom: 1;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border: 0px solid #000;
+    width: 210mm;
+    padding: 10mm;
+    position: relative;
+    page-break-after: auto;
+    font-size: 13px;
+    font-family: "Noto Sans", Helvetica, Arial, sans-serif;
+    color: #000;
+}
+.template-wrapper .template {
+    transform-origin: top left;
+    width: 793.688px;
+    padding: 37.7953px;
+    margin: 20px auto 40px;
+	background-color: white;
+     -webkit-print-color-adjust: exact
+}
+.template-entry {
+    white-space: normal;
+}
+
+.template * {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.template .template-left-column, .template-right-column {
+    border:0 solid #000;
+    width: 49%;
+}
+.template .template-right-column {
+    padding-left: 2%;
+}
+.template .template-left-column,
+.template .template-invoice-data .template-logo {
+    float: left;
+    text-align: left;
+}
+.template .template-right-column {
+    float: right;
+    text-align: right;
+}
+
+.template .template-third-column {
+    width: 200px !important;
+}
+
+/* logo */
+.template .template-logo {
+    background: none;
+    background-repeat: no-repeat;
+    background-position: left top;
+}
+.template .template-logo img {
+    max-width: 350px;
+    max-height: 200px;
+}
+
+.template .template-logo-text {
+    font-size: 32px;
+    line-height: 36px;
+    white-space: normal;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: black;
+}
+/* blocks */
+.template .template-header {
+    margin-bottom: 35px;
+}
+.template .template-extra-data-row {
+    margin: 5px 0;
+    padding: 3px 0;
+}
+
+/* common styles */
+.template .template-bold {
+    font-family: "Noto Sans Bold", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+}
+.template .template-text-right {
+    text-align: right !important;
+}
+.template .template-text-left {
+    text-align: left !important;
+}
+.template .template-divider {
+    border: none;
+    height: 1px;
+    width: 100%;
+    background: #cccccc;
+    font-size: 1px;
+    line-height: 1px;
+    clear: both;
+}
+.template .template-notes, .template .template-notes * {
+    border-top: 1px solid #414141;
+    font-size: 11px;
+    margin-top: 30px;
+    padding-top: 10px;
+    white-space: normal;
+}
+.simplebox .template {
+    margin: 20px auto 40px;
+}
+.template  .template-extra-data-row p {
+    white-space: normal;
+}
+.templat-eof-visible {
+    overflow: visible !important;
+}
+.template-paging {
+    font-size: 9px;
+    position: absolute;
+    bottom: 20px;
+    right: 40px;
+}
+.clearboth {
+	clear:both;
+	line-height: 1px;
+	font-size:1px !important;
+}
+.bankdetails-data td {
+    padding: 3px;
+}
+.template .template-signature {
+	display: block;
+	height: 30px;
+    margin: 5px 0 10px 0;
+    background-color: #e5e5e5;
+    -webkit-print-color-adjust: exact
+}
+
+.template .template-total {
+	display: block;
+	height: 30px;
+    padding: 0 5px;
+    background-color: #e5e5e5;
+    -webkit-print-color-adjust: exact;
+    line-height: 30px;
+}
+
+.invoice-amountbgn {
+    color:#888888;
+    font-size:10px !important;
+}
+
+.template-price-big {
+    font-family: "Noto Sans Bold", Helvetica, Arial, sans-serif;
+    color: #ffffff;
+    font-size: 52px; 
+    font-weight: bold;
+    line-height: 40px;
+}
+.template-price-currency {
+    color: #ffffff;
+    font-size: 30px;
+    line-height: 40px;
+}
+.template-price-note {
+    color: #ffffff;
+    font-size:12px;
+}
+table.template-objects-table {
+    border-collapse: collapse;
+    width:100%;
+    margin-top: 20px;
+}
+table.template-objects-table td {
+    padding: 5px;
+}
+table.template-objects-table thead td {
+    color: white;
+    border-bottom: 1px solid #CCC;
+    background-color: #7F7F7F;
+    -webkit-print-color-adjust: exact
+}
+
+table.template-objects-table tbody {
+    border-top: 1px solid #fff;
+}
+
+table.template-objects-table tbody tr:nth-child(even) {
+    background:#ffffff;
+}
+
+table.template-objects-table tbody tr:nth-child(odd) {
+    background:#e5e5e5;
+}
+
+.template-notes {
+    border-top: 1px dashed #14ba00;
+}
+.template-stamp {
+    position: absolute;
+    top: 30;
+    right: 170px;
+    width:130px;
+    height:130px;
+    background-image:none;
+    background-repeat: no-repeat;
+}
+
+.template-target h3 {
+    font-family: "Noto Sans Bold", Helvetica, Arial, sans-serif;
+    font-size: 15px !important;
+    font-weight: bold;
+    line-height: 15px !important;
+    margin: 0 !important;
+}
+.template-target p, .template-target p  * {
+    line-height: 18px;
+    font-size: 13px;
+}
+.template .template-invoice-data h2 {
+    font-size: 18px;
+    line-height:20px;
+    font-weight: normal;
+    white-space: normal !important;
+}
+.template-invoice-data p span {
+    font-size: 12px;
+    line-height: 12px;
+}
+
+.template-invoice-data p span.template-number {
+    font-size: 28px;
+    line-height: 42px;
+}
+.template-invoice-data p span.template-date {
+    padding-left: 10px;
+}
+
+.template .template-highlight {
+    font-family: "Noto Sans Bold", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    display: block;
+    line-height: 30px;
+}
+
+.template .template-section-header {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 30px;
+}
+
+.template .template-summary-data {
+   padding-bottom: 10px;
+   padding-top: 40px;
+} 
+.template .template-left-column p {
+    white-space: normal;
+}
+.template-extra-data-row .template-left-column,
+.template-extra-data-row .template-right-column {
+    overflow: visible;
+}
+div.template-invoice-data {
+    overflow: visible;
+}
+.template-invoice-data .template-left-column p {
+    padding-top:3px;
+}
+.template .template-objects-table-container {
+    height: 240px;
+    margin-top: 40px;
+}
+.template-footer {
+    font-size: 9px;
+    font-style: italic;
+    line-height: 14px;
+    position: absolute;
+    bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .dropdown-menu.invoice-menu {
+    left: 0;
+  }
+}

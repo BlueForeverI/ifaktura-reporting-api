@@ -1,0 +1,96 @@
+{
+	"options": {
+		"shouldTranslate": false,
+		"stamp": "none"
+	},
+	"invoice": {
+		"number": "92",
+		"type": "invoice",
+		"date": "2020-12-16T08:08:00.000000Z",
+		"deadline": "2021-01-14T22:00:00.000000Z",
+		"issuedDate": "2020-12-16T08:08:00.000000Z",
+		"totalSum": 2061.6,
+		"tax": 343.6,
+		"vat": 20,
+		"paymentMethod": "bankTransfer",
+		"recipient": "Bulent Bulut",
+		"author": "Кристин Мертенс",
+		"status": "pending",
+		"client": {
+			"name": "КАМБРО ОЗАЙ БГ",
+			"bulstat": "204277908",
+			"hasVatNumber": true,
+			"vatNumber": "BG204277908",
+			"hasTranslation": true,
+			"city": "Шумен",
+			"address": "БЪЛГАРИЯ\nобласт Шумен, община Шумен\nгр. Шумен 9700\nИндустриален парк - Шумен, ул. \"5\" No 12",
+			"issuer": "КЕРЕМ ОЗБЕК",
+			"nameEn": "CAMBRO OZAY BG",
+			"cityEn": "SHUMEN",
+			"addressEn": "INDUSTRIAL AREA DISTRICT 1",
+			"issuerEn": "KEREM OZBEK",
+			"notes": null
+		},
+		"bankAccount": {
+			"name": "UBB",
+			"bankName": "UBB",
+			"alternativeBankName": "UBB",
+			"bicCode": "UBBSBGSF",
+			"iban": "IBAN BG12UBBS88881400906579"
+		},
+		"currency": {
+			"name": "EUR"
+		},
+		"products": [
+			{
+				"code": "0-01",
+				"name": "Месечни разходи за услуги по обслужване на сензорна мрежа  (дек. 2020 - дек. 2021)",
+				"price": "39.0000",
+				"quantity": 12,
+				"translation": "Monthly service cost for sensor network (Dec 2020 - Dec 2021) -",
+				"measure": {
+					"name": "бр.",
+					"alternativeName": "pcs."
+				}
+			},
+			{
+				"code": "0-02",
+				"name": "Калибриране на сензор за качество на въздуха",
+				"price": "250.0000",
+				"quantity": 5,
+				"translation": "Calibration of air quality sensor",
+				"measure": {
+					"name": "бр.",
+					"alternativeName": "pcs."
+				}
+			}
+		],
+		"discountType": "amount",
+		"discount": 0,
+		"notes": "Сума в BGN с включен 20% ДДС: 672,02 лв",
+		"noTaxReason": null,
+		"created_at": "2020-12-16T16:11:49.000000Z",
+		"updated_at": "2020-12-21T14:49:05.000000Z",
+		"originalDate": "2020-12-17T00:00:49.000000Z",
+		"originalInSystem": 1,
+		"originalNumber": null,
+		"summary": null,
+		"introduction": null,
+		"company": {
+			"name": "ИнсайтЕър Юръп",
+			"bulstat": "204251991",
+			"hasVatNumber": true,
+			"vatNumber": "BG204251991",
+			"city": "София",
+			"address": "БЪЛГАРИЯ\nобласт София (столица), община Столична\nгр. София 1680\nрайон р-н Витоша\nж.к. Манастирски ливади, бул. България No 88, вх. 3, ет. 3, ап. 16",
+			"issuer": "Кристин Франсис Л Мертенс",
+			"hasTranslation": true,
+			"logoUrl": "https://i.imgur.com/W7QpTAW.png",
+			"showLogoOnInvoices": true,
+			"nameEn": "INSIGHTAIR EUROPE LTD.",
+			"cityEn": "Sofia",
+			"addressEn": "Sofia, 88 Bulgaria blvd., 3-3-16",
+			"issuerEn": "Kristin Fransis L Mertens"
+		}
+	}
+}
