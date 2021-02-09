@@ -18,6 +18,11 @@
     "strategy": "http-server"
   },
   "extensions": {
+    "chrome-pdf": {  
+	  "launchOptions": {  
+	    "args": ["--no-sandbox"]  
+	  } 
+    },
     "authentication": {
       "cookieSession": {},
       "admin": {
