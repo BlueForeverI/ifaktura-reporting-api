@@ -1,3 +1,6 @@
+const {sDumi} = require('s-dumi');
+const {ToWords} = require('to-words');
+
 function invoiceValue(invoice) {
   return invoice ? invoice.products.reduce((sum, current) => sum + current.price * current.quantity, 0) : 0;
 }
@@ -67,7 +70,7 @@ function deepFind(obj, path) {
 
   for (i = 0; i < paths.length; ++i) {
     if (current[paths[i]] == undefined) {
-      return undefined;
+      return paths[i];
     } else {
       current = current[paths[i]];
     }
@@ -75,11 +78,11 @@ function deepFind(obj, path) {
   return current;
 }
 
-function numberToWords(value, invoice) {
+function numberToWords(value, invoice, options) {
     const numbersKey = 'app.invoices.numbers';
     const currencyKey = `${numbersKey}.currencies.${invoice.currency.name}`;
 
-    let mainKeys = toWords(value, numbersKey);
+    let mainKeys = [toWords(value, options)];
 
     if (Math.floor(value) === 1) {
       mainKeys.push(`${currencyKey}.single`);
@@ -90,7 +93,7 @@ function numberToWords(value, invoice) {
     const cents = parseInt(((value % 1) * 100).toFixed(2), 10);
     if (cents !== 0) {
       mainKeys.push(`${numbersKey}.and`);
-      const subKeys = toWords(cents, numbersKey);
+      const subKeys = [toWords(cents, options)];
 
       if (cents === 1) {
         subKeys.push(`${currencyKey}.subSingle`);
@@ -104,50 +107,17 @@ function numberToWords(value, invoice) {
     return mainKeys;
   }
 
-function toWords(value, numbersKey) {
-    const thousands = Math.floor(value / 1000);
-    const hundreds = Math.floor((value % 1000) / 100);
-    const tens = Math.floor((value % 100) / 10);
-    const ones = Math.floor(value % 10);
-    let keys = [];
-
-    if (thousands > 0) {
-      if (thousands === 1) {
-        keys.push(`${numbersKey}.1000`);
-      } else if (thousands > 9) {
-        keys = this.toWords(thousands, numbersKey);
-        keys.push(`${numbersKey}.thousands`);
-      } else {
-        keys.push(`${numbersKey}.${thousands}`);
-        keys.push(`${numbersKey}.thousands`);
+function toWords(value, options) {
+    const converter = new ToWords({
+      localeCode: 'en-US',
+      converterOptions: {
+        currency: false,
+        ignoreDecimal: true,
+        ignoreZeroCurrency: true,
       }
-    }
-
-    if (hundreds > 0) {
-      keys.push(`${numbersKey}.${hundreds * 100}`);
-    }
-
-    if (hundreds !== 0 && tens === 0) {
-      keys.push(`${numbersKey}.and`);
-    }
-
-    if (tens > 1) {
-      if (ones === 0) {
-        keys.push(`${numbersKey}.${tens * 10}`);
-      } else {
-        keys.push(`${numbersKey}.${tens * 10}`);
-        keys.push(`${numbersKey}.and`);
-        keys.push(`${numbersKey}.${ones}`);
-      }
-    } else if (tens === 1) {
-      if (thousands !== 0 || hundreds !== 0) {
-        keys.push(`${numbersKey}.and`);
-      }
-
-      keys.push(`${numbersKey}.${tens}${ones}`);
-    } else if (ones > 0) {
-      keys.push(`${numbersKey}.${ones}`);
-    }
-
-    return keys;
+    });
+    let raw = sDumi(value);
+    return options.language == 'en' 
+      ? converter.convert(value).toLowerCase() 
+      : raw.toLowerCase().substring(0, raw.indexOf(' лв'));
   }

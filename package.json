@@ -9,6 +9,9 @@
     "entryPoint": "server.js"
   },
   "dependencies": {
-    "jsreport": "^2.11.0"
+    "axios": "0.21.1",
+    "jsreport": "2.11.0",
+    "s-dumi": "^1.0.3",
+    "to-words": "^2.3.1"
   }
 }

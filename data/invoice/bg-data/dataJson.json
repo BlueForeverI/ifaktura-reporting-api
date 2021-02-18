@@ -568,8 +568,8 @@
                     "EUR": {
                         "single": "евро",
                         "multiple": "евро",
-                        "subSingle": "цент",
-                        "subMultiple": "цента"
+                        "subSingle": "евроцент",
+                        "subMultiple": "евроцента"
                     }
                 }
             }

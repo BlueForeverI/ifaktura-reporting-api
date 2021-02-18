@@ -566,8 +566,8 @@
                     "EUR": {
                         "single": "euro",
                         "multiple": "euro",
-                        "subSingle": "cent",
-                        "subMultiple": "cents"
+                        "subSingle": "euro-cent",
+                        "subMultiple": "euro-cents"
                     }
                 }
             }

@@ -1,96 +1,87 @@
 {
 	"options": {
-		"shouldTranslate": false,
-		"stamp": "none"
+		"shouldTranslate": true,
+		"stamp": "none",
+		"language": "en"
 	},
 	"invoice": {
-		"number": "92",
+		"id": 161,
+		"number": "37",
 		"type": "invoice",
-		"date": "2020-12-16T08:08:00.000000Z",
-		"deadline": "2021-01-14T22:00:00.000000Z",
-		"issuedDate": "2020-12-16T08:08:00.000000Z",
-		"totalSum": 2061.6,
-		"tax": 343.6,
-		"vat": 20,
+		"date": "2021-02-18T02:02:00.000000Z",
+		"deadline": null,
+		"issuedDate": "2021-02-18T02:02:00.000000Z",
+		"totalSum": 145900.55,
+		"tax": 0,
+		"vat": 0,
 		"paymentMethod": "bankTransfer",
-		"recipient": "Bulent Bulut",
-		"author": "Кристин Мертенс",
+		"recipient": "General Manager",
+		"author": "Halil Ibrahim Gul",
 		"status": "pending",
 		"client": {
-			"name": "КАМБРО ОЗАЙ БГ",
-			"bulstat": "204277908",
+			"name": "Iron Mountain Srl.",
+			"bulstat": "15537372",
 			"hasVatNumber": true,
-			"vatNumber": "BG204277908",
+			"vatNumber": "RO15537372",
 			"hasTranslation": true,
-			"city": "Шумен",
-			"address": "БЪЛГАРИЯ\nобласт Шумен, община Шумен\nгр. Шумен 9700\nИндустриален парк - Шумен, ул. \"5\" No 12",
-			"issuer": "КЕРЕМ ОЗБЕК",
-			"nameEn": "CAMBRO OZAY BG",
-			"cityEn": "SHUMEN",
-			"addressEn": "INDUSTRIAL AREA DISTRICT 1",
-			"issuerEn": "KEREM OZBEK",
-			"notes": null
+			"city": "Bucuresti",
+			"address": "SAT. DRAGOMIREŞTI-DEAL - COM. DRAGOMIREŞTI-VALE\nSTR. DE 287/1\nEt. PARTER",
+			"issuer": "General Manager",
+			"nameEn": "Iron Mountain Romania srl",
+			"cityEn": "Bucuresti",
+			"addressEn": "SAT. DRAGOMIREŞTI-DEAL - COM. DRAGOMIREŞTI-VALE\nSTR. DE 287/1\nEt. PARTER",
+			"issuerEn": "General Manager",
+			"notes": "Iron Mountain srl Romania\nStr. Gara Herastrau nr. 2, etaj 3\nSector 2\nBucuresti 020334"
 		},
 		"bankAccount": {
-			"name": "UBB",
-			"bankName": "UBB",
-			"alternativeBankName": "UBB",
-			"bicCode": "UBBSBGSF",
-			"iban": "IBAN BG12UBBS88881400906579"
+			"name": "T.C. Ziraat Bankası-Sofia Branch",
+			"bankName": "ТЕ ДЖЕ ЗИРААТ БАНКАСЪ - КЛОН СОФИЯ",
+			"alternativeBankName": "T.C. Ziraat Bankası-Sofia Branch",
+			"bicCode": "TCZBBGSF",
+			"iban": "BG38TCZB93501402094400"
 		},
 		"currency": {
 			"name": "EUR"
 		},
 		"products": [
 			{
-				"code": "0-01",
-				"name": "Месечни разходи за услуги по обслужване на сензорна мрежа  (дек. 2020 - дек. 2021)",
-				"price": "39.0000",
-				"quantity": 12,
-				"translation": "Monthly service cost for sensor network (Dec 2020 - Dec 2021) -",
-				"measure": {
-					"name": "бр.",
-					"alternativeName": "pcs."
-				}
-			},
-			{
-				"code": "0-02",
-				"name": "Калибриране на сензор за качество на въздуха",
-				"price": "250.0000",
-				"quantity": 5,
-				"translation": "Calibration of air quality sensor",
+				"code": "0-25",
+				"name": "Design, Supply and Install Racking System at Paulesti Ph-2b Racking Project",
+				"price": "145900.5500",
+				"quantity": 1,
+				"translation": "Design, Supply and Install Racking System at Paulesti Ph-2b Racking Project",
 				"measure": {
 					"name": "бр.",
 					"alternativeName": "pcs."
 				}
 			}
 		],
-		"discountType": "amount",
+		"discountType": "percentage",
 		"discount": 0,
-		"notes": "Сума в BGN с включен 20% ДДС: 672,02 лв",
+		"notes": "Contracted Work: Design, Supply and Install Racking System at Paulesti Ph-2b Area Contract Ref.: IME/031/240/21/A\nProject Ref No : 20RO/240/CD/400T Project’s name : Romania Paulesti Ph-2b Racking Project",
 		"noTaxReason": null,
-		"created_at": "2020-12-16T16:11:49.000000Z",
-		"updated_at": "2020-12-21T14:49:05.000000Z",
-		"originalDate": "2020-12-17T00:00:49.000000Z",
+		"created_at": "2021-02-18T08:17:00.000000Z",
+		"updated_at": "2021-02-18T08:25:41.000000Z",
+		"originalDate": "2021-02-18T10:10:00.000000Z",
 		"originalInSystem": 1,
 		"originalNumber": null,
 		"summary": null,
 		"introduction": null,
 		"company": {
-			"name": "ИнсайтЕър Юръп",
-			"bulstat": "204251991",
+			"name": "Хайбраг Индъстриъл Технолоджис",
+			"bulstat": "205679913",
 			"hasVatNumber": true,
-			"vatNumber": "BG204251991",
+			"vatNumber": "BG205679913",
 			"city": "София",
-			"address": "БЪЛГАРИЯ\nобласт София (столица), община Столична\nгр. София 1680\nрайон р-н Витоша\nж.к. Манастирски ливади, бул. България No 88, вх. 3, ет. 3, ап. 16",
-			"issuer": "Кристин Франсис Л Мертенс",
+			"address": "БЪЛГАРИЯ\nобласт София (столица), община Столична\nгр. София 1680\nрайон р-н Витоша\nкв. Манастирски ливади, бул. България No 88, вх. 3, ет. 3, офис 16",
+			"issuer": "Халил Ибрахим Гюл",
 			"hasTranslation": true,
-			"logoUrl": "https://i.imgur.com/W7QpTAW.png",
+			"logoUrl": "https://i.imgur.com/jEeDTF0.jpg",
 			"showLogoOnInvoices": true,
-			"nameEn": "INSIGHTAIR EUROPE LTD.",
+			"nameEn": "HAIBRAG INDUSTRIAL TECHNOLOGIES LTD.",
 			"cityEn": "Sofia",
 			"addressEn": "Sofia, 88 Bulgaria blvd., 3-3-16",
-			"issuerEn": "Kristin Fransis L Mertens"
+			"issuerEn": "Halil Ibrahim Gul"
 		}
 	}
 }

@@ -172,7 +172,7 @@
               <span>{{ deepFind $localizedResource 'app.invoices.preview.valueText' }}</span>:
             </p>
             <p class="template-bold">
-            {{#each (numberToWords (fixedNum invoice.totalSum) invoice)}} 
+            {{#each (numberToWords (fixedNum invoice.totalSum) invoice options)}} 
                 {{ deepFind @root.$localizedResource this }}
             {{/each}}
             </p>
