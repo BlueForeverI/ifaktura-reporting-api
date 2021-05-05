@@ -253,7 +253,7 @@
               <span>{{ deepFind $localizedResource 'app.invoices.preview.vatValue' }}</span>:
             </div>
             <div class="template-right template-bold">
-              {{formatNumber (taxAmount invoice)}} {{invoice.currency.name}} </div>
+              {{formatNumber invoice.tax}} {{invoice.currency.name}} </div>
           </div>
           <div class="template-divider">&nbsp;</div>
           <div class="template-extra-data-row">

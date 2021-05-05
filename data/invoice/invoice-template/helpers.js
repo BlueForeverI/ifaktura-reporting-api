@@ -37,10 +37,6 @@ function taxBase(invoice) {
   return baseValue - discount;
 }
 
-function taxAmount(invoice) {
-  return taxBase(invoice) * (invoice ? invoice.vat : 0) / 100;
-}
-
 function isBankTransfer(invoice) {
   return invoice.paymentMethod &&
     invoice.paymentMethod === 'bankTransfer';
