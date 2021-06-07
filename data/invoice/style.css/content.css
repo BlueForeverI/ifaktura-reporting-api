@@ -35,7 +35,7 @@ table {
     transform-origin: top left;
     width: 793.688px;
     padding: 37.7953px;
-    margin: 20px auto 40px;
+    margin: 0;
 	background-color: white;
      -webkit-print-color-adjust: exact
 }
@@ -79,7 +79,7 @@ table {
 }
 .template .template-logo img {
     max-width: 350px;
-    max-height: 200px;
+    max-height: 120px;
 }
 
 .template .template-logo-text {

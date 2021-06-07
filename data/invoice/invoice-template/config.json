@@ -8,13 +8,16 @@
         "mediaType": "screen",
         "displayHeaderFooter": true,
         "format": "A4",
-        "marginBottom": "3cm"
+        "marginBottom": "3cm",
+        "marginTop": "",
+        "marginLeft": "",
+        "marginRight": ""
     },
     "creationDate": {
         "$$date": 1612813336724
     },
     "modificationDate": {
-        "$$date": 1620238659945
+        "$$date": 1623102318218
     },
     "_id": "V9nLh7J1qmpgYWck",
     "$entitySet": "templates",
