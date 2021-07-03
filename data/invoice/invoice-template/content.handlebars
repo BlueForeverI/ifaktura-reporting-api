@@ -26,13 +26,25 @@
       <div class="template-header">
         <div class="template-invoice-data templat-eof-visible">
           <div class="template-logo">
-            {{#if (equals options.stamp 'original')}}
-              <img class="template-stamp" src="{#asset stamp-original.png @encoding=dataURI}" />
-              <div class="template-stamp template-stamp-original"></div>
+            {{#if (equals options.language 'bg')}}
+              {{#if (equals options.stamp 'original')}}
+                <img class="template-stamp" src="{#asset stamp-original.png @encoding=dataURI}" />
+                <div class="template-stamp template-stamp-original"></div>
+              {{/if}}
+              {{#if (equals options.stamp 'copy')}}
+                <img class="template-stamp" src="{#asset stamp-copy.png @encoding=dataURI}" />
+                <div class="template-stamp template-stamp-original"></div>
+              {{/if}}
             {{/if}}
-            {{#if (equals options.stamp 'copy')}}
-              <img class="template-stamp" src="{#asset stamp-copy.png @encoding=dataURI}" />
-              <div class="template-stamp template-stamp-original"></div>
+            {{#if (equals options.language 'en')}}
+              {{#if (equals options.stamp 'original')}}
+                <img class="template-stamp" src="{#asset stamp-original_en.png @encoding=dataURI}" />
+                <div class="template-stamp template-stamp-original"></div>
+              {{/if}}
+              {{#if (equals options.stamp 'copy')}}
+                <img class="template-stamp" src="{#asset stamp-copy_en.png @encoding=dataURI}" />
+                <div class="template-stamp template-stamp-original"></div>
+              {{/if}}
             {{/if}}
             {{#unless invoice.company.showLogoOnInvoices}}
                 <div class="template-logo-text">{{ invoice.company.name }}</div>
