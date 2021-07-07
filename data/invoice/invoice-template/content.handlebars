@@ -170,7 +170,7 @@
           <tr class="template-entry">
             <td style="width:300px;">{{ tern @root.options.shouldTranslate true translation name}}</td>
             <td style="width:80px; text-align:center;">{{tern @root.options.shouldTranslate true measure.alternativeName measure.name}}</td>
-            <td style="width:80px; text-align:center;">{{quantity}}</td>
+            <td style="width:80px; text-align:center;">{{fixedNum quantity}}</td>
             <td style="text-align: right;">{{formatNumber price}} {{@root.invoice.currency.name}}</td>
             <td style="text-align: right;">{{formatNumber (mult price quantity)}} {{@root.invoice.currency.name}}</td>
           </tr>

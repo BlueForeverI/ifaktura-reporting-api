@@ -26,6 +26,9 @@ function equals(a, b) {
 }
 
 function fixedNum(num) {
+  if (typeof num === 'string') {
+    num = parseFloat(num);
+  }
   return num.toFixed(2);
 }
 

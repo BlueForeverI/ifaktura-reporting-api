@@ -1,8 +1,274 @@
 {
 	"options": {
-		"shouldTranslate": false,
+		"shouldTranslate": true,
 		"stamp": "original",
-		"language": "bg"
+		"language": "en"
 	},
-	"invoice": {"id":2969,"number":"72","type":"invoice","date":"2021-05-31T18:18:00.000000Z","deadline":null,"issuedDate":"2021-05-31T18:18:00.000000Z","totalSum":44555,"tax":0,"vat":0,"paymentMethod":"bankTransfer","recipient":"General Manager","author":"Bart Van Bruessel","status":"pending","client":{"name":"Energy Consult and Design V.O.F.","bulstat":"0549912004","hasVatNumber":true,"vatNumber":"BE0549912004","hasTranslation":true,"city":"9260 Wichelen","address":"Brielstraat 9, BELGIUM","issuer":"General Manager","nameEn":"Energy Consult and Design V.O.F.","cityEn":"9260 Wichelen","addressEn":"Brielstraat 9, BELGIUM","issuerEn":"General Manager","notes":null},"bankAccount":{"name":"PROCREDIT BANK","bankName":"PROCREDIT BANK","alternativeBankName":"PROCREDIT BANK","bicCode":"BIC PRCBBGSF","iban":"BG16PRCB92301049 621101"},"currency":{"name":"EUR"},"products":[{"code":"0-01","name":"LLCZ Revit 05\/2021","price":"35.0000","quantity":"7.00","translation":"LLCZ Revit 05\/2021","measure":{"name":"\u0440\u0430\u0431\u043e\u0442\u043d\u0438 \u0447\u0430\u0441\u043e\u0432\u0435","alternativeName":"hours"}},{"code":"0-01","name":"LLVL Revit 05\/2021","price":"35.0000","quantity":"183.00","translation":"LLVL Revit 05\/2021","measure":{"name":"\u0440\u0430\u0431\u043e\u0442\u043d\u0438 \u0447\u0430\u0441\u043e\u0432\u0435","alternativeName":"hours"}},{"code":"0-02","name":"UVS Revit 05\/2021","price":"35.0000","quantity":"19.00","translation":"UVS Revit 05\/2021","measure":{"name":"\u0440\u0430\u0431\u043e\u0442\u043d\u0438 \u0447\u0430\u0441\u043e\u0432\u0435","alternativeName":"hours"}},{"code":"0-03","name":"LLRU Revit 05\/2021","price":"35.0000","quantity":"227.00","translation":"LLRU Revit 05\/2021","measure":{"name":"\u0440\u0430\u0431\u043e\u0442\u043d\u0438 \u0447\u0430\u0441\u043e\u0432\u0435","alternativeName":"hours"}},{"code":"0-05","name":"LLRU Refrigeration design 05\/2021","price":"55.0000","quantity":"26.00","translation":"LLRU Refrigeration design 05\/2021","measure":{"name":"\u0440\u0430\u0431\u043e\u0442\u043d\u0438 \u0447\u0430\u0441\u043e\u0432\u0435","alternativeName":"hours"}},{"code":"0-04","name":"LLEM Refrigeration design 05\/2021","price":"55.0000","quantity":"37.00","translation":"LLEM Refrigeration design 05\/2021","measure":{"name":"\u0440\u0430\u0431\u043e\u0442\u043d\u0438 \u0447\u0430\u0441\u043e\u0432\u0435","alternativeName":"hours"}},{"code":"0-17","name":"MOWi Refrigeration design 05\/2021","price":"55.0000","quantity":"4.00","translation":"MOWi Refrigeration design 05\/2021","measure":{"name":"\u0431\u0440.","alternativeName":"pcs."}},{"code":"0-06","name":"Project management LLCZ 05\/2021","price":"55.0000","quantity":"109.00","translation":"Project management LLCZ 05\/2021","measure":{"name":"\u0440\u0430\u0431\u043e\u0442\u043d\u0438 \u0447\u0430\u0441\u043e\u0432\u0435","alternativeName":"hours"}},{"code":"0-07","name":"Project management LLRU 05\/2021","price":"55.0000","quantity":"95.00","translation":"Project management LLRU 05\/2021","measure":{"name":"\u0440\u0430\u0431\u043e\u0442\u043d\u0438 \u0447\u0430\u0441\u043e\u0432\u0435","alternativeName":"hours"}},{"code":"0-08","name":"Project management LLEM 05\/2021","price":"55.0000","quantity":"106.00","translation":"Project management LLEM 05\/2021","measure":{"name":"\u0440\u0430\u0431\u043e\u0442\u043d\u0438 \u0447\u0430\u0441\u043e\u0432\u0435","alternativeName":"hours"}},{"code":"0-18","name":"BIM Management LLCZ 05\/2021","price":"55.0000","quantity":"20.00","translation":"BIM Management LLCZ 05\/2021","measure":{"name":"\u0431\u0440.","alternativeName":"pcs."}},{"code":"0-18","name":"BIM Management LLEM 05\/2021","price":"55.0000","quantity":"122.00","translation":"BIM Management LLEM 05\/2021","measure":{"name":"\u0431\u0440.","alternativeName":"pcs."}},{"code":"0-10","name":"Administration 05\/2021","price":"25.0000","quantity":"10.00","translation":"Administration 05\/2021","measure":{"name":"\u0440\u0430\u0431\u043e\u0442\u043d\u0438 \u0447\u0430\u0441\u043e\u0432\u0435","alternativeName":"hours"}},{"code":"0-11","name":"Management fee 05\/2021","price":"500.0000","quantity":"1.00","translation":"Management fee 05\/2021","measure":{"name":"\u0431\u0440.","alternativeName":"pcs."}}],"discountType":"percentage","discount":0,"notes":"We kindly ask you to pay the amount of the invoice within the first 30 days on the mentioned above bank account, indicating the invoice number.","noTaxReason":null,"created_at":"2021-06-04T09:30:22.000000Z","updated_at":"2021-06-04T10:10:42.000000Z","originalDate":"2021-04-29T15:15:12.000000Z","originalInSystem":1,"originalNumber":null,"summary":null,"introduction":null,"company":{"name":"\u041a\u0430\u043b\u0435\u043d\u0438\u0443\u043c \u041e\u041e\u0414","bulstat":"204217925","hasVatNumber":true,"vatNumber":"BG204217925","city":"\u0421\u043e\u0444\u0438\u044f","address":"\u0414\u044a\u0440\u0436\u0430\u0432\u0430: \u0411\u042a\u041b\u0413\u0410\u0420\u0418\u042f\n\u041e\u0431\u043b\u0430\u0441\u0442: \u0421\u043e\u0444\u0438\u044f (\u0441\u0442\u043e\u043b\u0438\u0446\u0430), \u041e\u0431\u0449\u0438\u043d\u0430: \u0421\u0442\u043e\u043b\u0438\u0447\u043d\u0430\n\u041d\u0430\u0441\u0435\u043b\u0435\u043d\u043e \u043c\u044f\u0441\u0442\u043e: \u0433\u0440. \u0421\u043e\u0444\u0438\u044f, \u043f.\u043a. 1504\n\u0440-\u043d \u041e\u0431\u043e\u0440\u0438\u0449\u0435\n\u0431\u0443\u043b.\/\u0443\u043b. \u0443\u043b. \u041e\u0431\u043e\u0440\u0438\u0449\u0435 \u2116 1, \u0431\u043b. -, \u0432\u0445. \u0411, \u0435\u0442. 2, \u0430\u043f. 4","issuer":"\u0411\u0430\u0440\u0442 \u0413\u0438\u043b\u0431\u0435\u0440\u0442 \u0420. \u0412\u0430\u043d \u0411\u0440\u044e\u0441\u0435\u043b","hasTranslation":true,"logoUrl":"https:\/\/i.imgur.com\/OVWU9oO.png","showLogoOnInvoices":true,"nameEn":"Caelenium Ltd.","cityEn":"Sofia","addressEn":"1, Oborishte Str., entr. B, fl. 2","issuerEn":"Bart Van Bruessel"}}
+	"invoice": {
+	"id": 2977,
+	"number": "73",
+	"type": "invoice",
+	"date": "2021-06-30T18:18:00.000000Z",
+	"deadline": null,
+	"issuedDate": "2021-06-30T18:18:00.000000Z",
+	"totalSum": 59680.08,
+	"tax": 0,
+	"vat": 0,
+	"paymentMethod": "bankTransfer",
+	"recipient": "General Manager",
+	"author": "Bart Van Bruessel",
+	"status": "pending",
+	"client": {
+		"name": "Energy Consult and Design V.O.F.",
+		"bulstat": "0549912004",
+		"hasVatNumber": true,
+		"vatNumber": "BE0549912004",
+		"hasTranslation": true,
+		"city": "9260 Wichelen",
+		"address": "Brielstraat 9, BELGIUM",
+		"issuer": "General Manager",
+		"nameEn": "Energy Consult and Design V.O.F.",
+		"cityEn": "9260 Wichelen",
+		"addressEn": "Brielstraat 9, BELGIUM",
+		"issuerEn": "General Manager",
+		"notes": null
+	},
+	"bankAccount": {
+		"name": "PROCREDIT BANK",
+		"bankName": "PROCREDIT BANK",
+		"alternativeBankName": "PROCREDIT BANK",
+		"bicCode": "BIC PRCBBGSF",
+		"iban": "BG16PRCB92301049 621101"
+	},
+	"currency": {
+		"name": "EUR"
+	},
+	"products": [
+		{
+			"code": "0-05",
+			"name": "LLBG Refrigeration design 06/2021",
+			"price": "55.0000",
+			"quantity": "15.1667",
+			"translation": "LLRU Refrigeration design",
+			"measure": {
+				"name": "работни часове",
+				"alternativeName": "hours"
+			}
+		},
+		{
+			"code": "0-05",
+			"name": "LLBG abroad Refrigeration Design 06/2021",
+			"price": "65.0000",
+			"quantity": "33.5000",
+			"translation": "LLRU Refrigeration design",
+			"measure": {
+				"name": "работни часове",
+				"alternativeName": "hours"
+			}
+		},
+		{
+			"code": "0-01",
+			"name": "LLCZ Revit 06/2021",
+			"price": "35.0000",
+			"quantity": "85.2500",
+			"translation": "LLCZ Revit",
+			"measure": {
+				"name": "работни часове",
+				"alternativeName": "hours"
+			}
+		},
+		{
+			"code": "0-01",
+			"name": "LLCZ Refrigeration design 06/2021",
+			"price": "55.0000",
+			"quantity": "73.8333",
+			"translation": "LLCZ Revit",
+			"measure": {
+				"name": "работни часове",
+				"alternativeName": "hours"
+			}
+		},
+		{
+			"code": "0-03",
+			"name": "LLCZ Refrigeration design abroad 06/2021",
+			"price": "65.0000",
+			"quantity": "12.5000",
+			"translation": "LLRU Revit",
+			"measure": {
+				"name": "работни часове",
+				"alternativeName": "hours"
+			}
+		},
+		{
+			"code": "0-03",
+			"name": "LLEM Revit  06/2021",
+			"price": "35.0000",
+			"quantity": "182.3333",
+			"translation": "LLRU Revit",
+			"measure": {
+				"name": "работни часове",
+				"alternativeName": "hours"
+			}
+		},
+		{
+			"code": "0-10",
+			"name": "LLEM Refrigeration Design 06/2021",
+			"price": "55.0000",
+			"quantity": "306.6167",
+			"translation": "Administration",
+			"measure": {
+				"name": "работни часове",
+				"alternativeName": "hours"
+			}
+		},
+		{
+			"code": "0-10",
+			"name": "LLEM Refrigeration Design abroad 06/2021",
+			"price": "65.0000",
+			"quantity": "20.7500",
+			"translation": "Administration",
+			"measure": {
+				"name": "работни часове",
+				"alternativeName": "hours"
+			}
+		},
+		{
+			"code": "0-10",
+			"name": "LLRO Revit 06/2021",
+			"price": "35.0000",
+			"quantity": "3.0000",
+			"translation": "Administration",
+			"measure": {
+				"name": "работни часове",
+				"alternativeName": "hours"
+			}
+		},
+		{
+			"code": "0-10",
+			"name": "LLRO Refrigeration Design 06/2021",
+			"price": "55.0000",
+			"quantity": "10.5833",
+			"translation": "Administration",
+			"measure": {
+				"name": "работни часове",
+				"alternativeName": "hours"
+			}
+		},
+		{
+			"code": "0-10",
+			"name": "LLRU Revit 06/2021",
+			"price": "35.0000",
+			"quantity": "288.5833",
+			"translation": "Administration",
+			"measure": {
+				"name": "работни часове",
+				"alternativeName": "hours"
+			}
+		},
+		{
+			"code": "0-10",
+			"name": "LLRU Refrigeration Design 06/2021",
+			"price": "55.0000",
+			"quantity": "127.3500",
+			"translation": "Administration",
+			"measure": {
+				"name": "работни часове",
+				"alternativeName": "hours"
+			}
+		},
+		{
+			"code": "0-10",
+			"name": "LLRU Refrigeration Design abroad 06/2021",
+			"price": "65.0000",
+			"quantity": "23.0833",
+			"translation": "Administration",
+			"measure": {
+				"name": "работни часове",
+				"alternativeName": "hours"
+			}
+		},
+		{
+			"code": "0-10",
+			"name": "MOWI 06/2021",
+			"price": "55.0000",
+			"quantity": "3.4667",
+			"translation": "Administration",
+			"measure": {
+				"name": "работни часове",
+				"alternativeName": "hours"
+			}
+		},
+		{
+			"code": "0-02",
+			"name": "UVS Revit 06/2021",
+			"price": "35.0000",
+			"quantity": "57.0000",
+			"translation": "UVS Revit",
+			"measure": {
+				"name": "работни часове",
+				"alternativeName": "hours"
+			}
+		},
+		{
+			"code": "0-03",
+			"name": "UVS(AB) Revit 06/2021",
+			"price": "35.0000",
+			"quantity": "56.8333",
+			"translation": "LLRU Revit",
+			"measure": {
+				"name": "работни часове",
+				"alternativeName": "hours"
+			}
+		},
+		{
+			"code": "0-10",
+			"name": "Administration 06/2021",
+			"price": "25.0000",
+			"quantity": "10.0000",
+			"translation": "Administration",
+			"measure": {
+				"name": "работни часове",
+				"alternativeName": "hours"
+			}
+		},
+		{
+			"code": "0-11",
+			"name": "Management fee 06/2021",
+			"price": "500.0000",
+			"quantity": "1.0000",
+			"translation": "Management fee",
+			"measure": {
+				"name": "бр.",
+				"alternativeName": "pcs."
+			}
+		}
+	],
+	"discountType": "percentage",
+	"discount": 0,
+	"notes": null,
+	"noTaxReason": null,
+	"created_at": "2021-07-07T16:12:17.000000Z",
+	"updated_at": "2021-07-07T16:57:53.000000Z",
+	"originalDate": "2021-07-08T10:10:17.000000Z",
+	"originalInSystem": 1,
+	"originalNumber": null,
+	"summary": null,
+	"introduction": null,
+	"company": {
+		"name": "Калениум ООД",
+		"bulstat": "204217925",
+		"hasVatNumber": true,
+		"vatNumber": "BG204217925",
+		"city": "София",
+		"address": "Държава: БЪЛГАРИЯ\nОбласт: София (столица), Община: Столична\nНаселено място: гр. София, п.к. 1504\nр-н Оборище\nбул./ул. ул. Оборище № 1, бл. -, вх. Б, ет. 2, ап. 4",
+		"issuer": "Барт Гилберт Р. Ван Брюсел",
+		"hasTranslation": true,
+		"logoUrl": "https://i.imgur.com/OVWU9oO.png",
+		"showLogoOnInvoices": true,
+		"nameEn": "Caelenium Ltd.",
+		"cityEn": "Sofia",
+		"addressEn": "1, Oborishte Str., entr. B, fl. 2",
+		"issuerEn": "Bart Van Bruessel"
+	}
+}
 }
