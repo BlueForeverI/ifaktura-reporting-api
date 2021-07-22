@@ -47,8 +47,13 @@
               {{/if}}
             {{/if}}
             {{#unless invoice.company.showLogoOnInvoices}}
+            {{#if (equals options.language 'bg')}}
                 <div class="template-logo-text">{{ invoice.company.name }}</div>
-			{{/unless}}
+            {{/if}}
+            {{#if (equals options.language 'en')}}
+                <div class="template-logo-text">{{ invoice.company.nameEn }}</div>
+            {{/if}}
+            {{/unless}}
 			{{#if invoice.company.showLogoOnInvoices}}
             <img src="{{invoice.company.logoUrl}}"/>
 			{{/if}}
@@ -297,7 +302,6 @@
           <h4 class="template-section-header">
             {{ deepFind $localizedResource 'app.invoices.new.notes' }}
           </h4>
-
           <p>{{ invoice.notes }}</p>
       </div>
     {{/if}}

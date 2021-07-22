@@ -300,6 +300,11 @@ div.template-invoice-data {
     bottom: 20px;
 }
 
+.page-break {
+    page-break-after: always;
+    page-break-inside: avoid;
+}
+
 @media (max-width: 768px) {
   .dropdown-menu.invoice-menu {
     left: 0;

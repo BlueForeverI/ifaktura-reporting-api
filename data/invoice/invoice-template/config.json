@@ -17,7 +17,7 @@
         "$$date": 1612813336724
     },
     "modificationDate": {
-        "$$date": 1625677516809
+        "$$date": 1626985699896
     },
     "_id": "V9nLh7J1qmpgYWck",
     "$entitySet": "templates",
@@ -45,5 +45,8 @@
                 "to-words"
             ]
         }
+    },
+    "phantom": {
+        "fitToPage": true
     }
 }
