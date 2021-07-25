@@ -5,7 +5,7 @@
     "engine": "handlebars",
     "chrome": {
         "printBackground": false,
-        "mediaType": "screen",
+        "mediaType": "print",
         "displayHeaderFooter": true,
         "format": "A4",
         "marginBottom": "3cm",
@@ -17,7 +17,7 @@
         "$$date": 1612813336724
     },
     "modificationDate": {
-        "$$date": 1627217653931
+        "$$date": 1627239562301
     },
     "_id": "V9nLh7J1qmpgYWck",
     "$entitySet": "templates",
@@ -25,7 +25,7 @@
         "shortid": "Y-NI0EkF3u"
     },
     "resources": {
-        "defaultLanguage": "en",
+        "defaultLanguage": "bg",
         "items": [
             {
                 "shortid": "vYESP5Ok4c",

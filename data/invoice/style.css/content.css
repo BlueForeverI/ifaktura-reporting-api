@@ -207,7 +207,8 @@ table.template-objects-table {
 table.template-objects-table td {
     padding: 5px;
 }
-table.template-objects-table thead td {
+table.template-objects-table thead th {
+    padding: 5px;
     color: white;
     border-bottom: 1px solid #CCC;
     background-color: #7F7F7F;
@@ -300,7 +301,6 @@ div.template-invoice-data {
     padding-top:3px;
 }
 .template .template-objects-table-container {
-    height: 240px;
     margin-top: 40px;
 }
 .template-footer {
@@ -315,6 +315,11 @@ div.template-invoice-data {
     page-break-after: always;
     page-break-inside: avoid;
 }
+
+.space-top {
+    padding-top: 50px;
+}
+
 
 @media (max-width: 768px) {
   .dropdown-menu.invoice-menu {

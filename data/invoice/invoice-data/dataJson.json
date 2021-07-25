@@ -1,109 +1,274 @@
 {
 	"options": {
-		"shouldTranslate": true,
+		"shouldTranslate": false,
 		"stamp": "original",
-		"language": "en"
+		"language": "bg"
 	},
 	"invoice": {
-		"id": 2980,
-		"number": "offer-1",
-		"type": "offer",
-		"date": "2021-08-23T12:12:00.000000Z",
-		"deadline": null,
-		"issuedDate": "2021-07-22T12:12:00.000000Z",
-		"totalSum": 42174,
-		"tax": 7029,
-		"vat": 20,
-		"paymentMethod": "bankTransfer",
-		"recipient": "Mария Енева / Maria Eneva",
-		"author": "Тамара Гагнидзе / Tamara Gagnidze",
-		"status": "pending",
-		"client": {
-			"name": "ТЕМАКС БЪЛГАРИЯ ЕООД",
-			"bulstat": "201056573",
-			"hasVatNumber": true,
-			"vatNumber": "BG201056573",
-			"hasTranslation": true,
-			"city": "Варна",
-			"address": "Държава: БЪЛГАРИЯ\nОбласт: Варна, Община: Варна\nНаселено място: гр. Варна, п.к. 9020\nр-н Младост\nж.к. Възраждане, бул./ул. ул.Блян № 2-партер Телефон: 052 57 06 44, Факс: 052 599 633\nАдрес на електронна поща: office@temax.bg",
-			"issuer": "ДОНЕМИРА СТОЯНОВА БАЙКОВА - ПЕТРОВА",
-			"nameEn": "TEMAX BULGARIA",
-			"cityEn": "VARNA",
-			"addressEn": "2 BLYAN STR, VARNA, BULGARIA",
-			"issuerEn": "DONEMIRA STOYANOVA BAYKOVA - PETROVA",
-			"notes": null
-		},
-		"bankAccount": {
-			"name": "ProCredit Bank (Bulgaria) EAD",
-			"bankName": "ProCredit Bank (Bulgaria) EAD",
-			"alternativeBankName": "ProCredit Bank (Bulgaria) EAD",
-			"bicCode": "PRCBBGSF",
-			"iban": "BG44PRCB92301051709201"
-		},
-		"currency": {
-			"name": "EUR"
-		},
-		"products": [
-			{
-				"code": "0-02",
-				"name": "Laminatte Alberra  190x1290x8mm AL2001 DELLE",
-				"price": "3.5500",
-				"quantity": "3300.0000",
-				"translation": "Laminatte Alberra  190x1290x8mm AL2001 DELLE",
-				"measure": {
-					"name": "кв. м",
-					"alternativeName": "sq. m"
-				}
-			},
-			{
-				"code": "0-03",
-				"name": "Laminatte Alberra  190x1290x8mm AL2002 ROSSO GOLD",
-				"price": "3.5500",
-				"quantity": "3300.0000",
-				"translation": "Laminatte Alberra  190x1290x8mm AL2002 ROSSO GOLD",
-				"measure": {
-					"name": "кв. м",
-					"alternativeName": "sq. m"
-				}
-			},
-			{
-				"code": "0-01",
-				"name": "Laminatte Alberra  190x1290x8mm AL2004 MONA GOLD",
-				"price": "3.5500",
-				"quantity": "3300.0000",
-				"translation": "Laminatte Alberra  190x1290x8mm AL2004 MONA GOLD",
-				"measure": {
-					"name": "кв. м",
-					"alternativeName": "sq. m"
-				}
+	"id": 2977,
+	"number": "73",
+	"type": "invoice",
+	"date": "2021-06-30T21:21:00.000000Z",
+	"deadline": null,
+	"issuedDate": "2021-06-30T21:21:00.000000Z",
+	"totalSum": 59680.08,
+	"tax": 0,
+	"vat": 0,
+	"paymentMethod": "bankTransfer",
+	"recipient": "General Manager",
+	"author": "Bart Van Bruessel",
+	"status": "pending",
+	"client": {
+		"name": "Energy Consult and Design V.O.F.",
+		"bulstat": "0549912004",
+		"hasVatNumber": true,
+		"vatNumber": "BE0549912004",
+		"hasTranslation": true,
+		"city": "9260 Wichelen",
+		"address": "Brielstraat 9, BELGIUM",
+		"issuer": "General Manager",
+		"nameEn": "Energy Consult and Design V.O.F.",
+		"cityEn": "9260 Wichelen",
+		"addressEn": "Brielstraat 9, BELGIUM",
+		"issuerEn": "General Manager",
+		"notes": null
+	},
+	"bankAccount": {
+		"name": "PROCREDIT BANK",
+		"bankName": "PROCREDIT BANK",
+		"alternativeBankName": "PROCREDIT BANK",
+		"bicCode": "BIC PRCBBGSF",
+		"iban": "BG16PRCB92301049 621101"
+	},
+	"currency": {
+		"name": "EUR"
+	},
+	"products": [
+		{
+			"code": "0-05",
+			"name": "LLBG Refrigeration design 06/2021",
+			"price": "55.0000",
+			"quantity": "15.1667",
+			"translation": "LLBG Refrigeration design 06/2021",
+			"measure": {
+				"name": "работни часове",
+				"alternativeName": "hours"
 			}
-		],
-		"discountType": "percentage",
-		"discount": 0,
-		"notes": "NOTES:\n1) Payment terms: T/T (100%  balance against on-board  after shipment)\n2) Delivery Date: Within 15 days \n3) Document: EX1 , CMR ,  INVOICE , PACKING LIST , EUR1 or CT1 (IF NEEDED),TIR CARNET (IF NEEDED).",
-		"noTaxReason": null,
-		"created_at": "2021-07-22T10:36:57.000000Z",
-		"updated_at": "2021-07-23T07:53:08.000000Z",
-		"originalDate": "2021-07-22T22:22:57.000000Z",
-		"originalInSystem": 1,
-		"originalNumber": null,
-		"summary": null,
-		"introduction": null,
-		"company": {
-			"name": "Анта Интернешънъл Трейдинг Къмпани ЕООД",
-			"bulstat": "206398303",
-			"hasVatNumber": true,
-			"vatNumber": "BG206398303",
-			"city": "София",
-			"address": "Държава: БЪЛГАРИЯ\nОбласт: София (столица), Община: Столична\nНаселено място: гр. София, п.к. 1233\nр-н Сердика\nбул./ул. ул. Софроний Врачански № 62",
-			"issuer": "Тамар Гагнидзе",
-			"hasTranslation": true,
-			"logoUrl": "https://i.imgur.com/QnoOCBF.png",
-			"showLogoOnInvoices": true,
-			"nameEn": "ANTA INTERNATIONAL TRADING COMPANY EOOD",
-			"cityEn": "Sofia",
-			"addressEn": "Sofroniy Vrachanski Str. 62, Serdika district, Sofia, Bulgaria,  Zip 1233",
-			"issuerEn": "Tamara Gagnidze"
+		},
+		{
+			"code": "0-05",
+			"name": "LLBG abroad Refrigeration Design 06/2021",
+			"price": "65.0000",
+			"quantity": "33.5000",
+			"translation": "LLBG abroad Refrigeration Design 06/2021",
+			"measure": {
+				"name": "работни часове",
+				"alternativeName": "hours"
+			}
+		},
+		{
+			"code": "0-01",
+			"name": "LLCZ Revit 06/2021",
+			"price": "35.0000",
+			"quantity": "85.2500",
+			"translation": "LLCZ Revit 06/2021",
+			"measure": {
+				"name": "работни часове",
+				"alternativeName": "hours"
+			}
+		},
+		{
+			"code": "0-01",
+			"name": "LLCZ Refrigeration design 06/2021",
+			"price": "55.0000",
+			"quantity": "73.8333",
+			"translation": "LLCZ Refrigeration design 06/2021",
+			"measure": {
+				"name": "работни часове",
+				"alternativeName": "hours"
+			}
+		},
+		{
+			"code": "0-03",
+			"name": "LLCZ Refrigeration design abroad 06/2021",
+			"price": "65.0000",
+			"quantity": "12.5000",
+			"translation": "LLCZ Refrigeration design abroad 06/2021",
+			"measure": {
+				"name": "работни часове",
+				"alternativeName": "hours"
+			}
+		},
+		{
+			"code": "0-03",
+			"name": "LLEM Revit  06/2021",
+			"price": "35.0000",
+			"quantity": "182.3333",
+			"translation": "LLEM Revit  06/2021",
+			"measure": {
+				"name": "работни часове",
+				"alternativeName": "hours"
+			}
+		},
+		{
+			"code": "0-10",
+			"name": "LLEM Refrigeration Design 06/2021",
+			"price": "55.0000",
+			"quantity": "306.6167",
+			"translation": "LLEM Refrigeration Design 06/2021",
+			"measure": {
+				"name": "работни часове",
+				"alternativeName": "hours"
+			}
+		},
+		{
+			"code": "0-10",
+			"name": "LLEM Refrigeration Design abroad 06/2021",
+			"price": "65.0000",
+			"quantity": "20.7500",
+			"translation": "LLEM Refrigeration Design abroad 06/2021",
+			"measure": {
+				"name": "работни часове",
+				"alternativeName": "hours"
+			}
+		},
+		{
+			"code": "0-10",
+			"name": "LLRO Revit 06/2021",
+			"price": "35.0000",
+			"quantity": "3.0000",
+			"translation": "LLRO Revit 06/2021",
+			"measure": {
+				"name": "работни часове",
+				"alternativeName": "hours"
+			}
+		},
+		{
+			"code": "0-10",
+			"name": "LLRO Refrigeration Design 06/2021",
+			"price": "55.0000",
+			"quantity": "10.5833",
+			"translation": "LLRO Refrigeration Design 06/2021",
+			"measure": {
+				"name": "работни часове",
+				"alternativeName": "hours"
+			}
+		},
+		{
+			"code": "0-10",
+			"name": "LLRU Revit 06/2021",
+			"price": "35.0000",
+			"quantity": "288.5833",
+			"translation": "LLRU Revit 06/2021",
+			"measure": {
+				"name": "работни часове",
+				"alternativeName": "hours"
+			}
+		},
+		{
+			"code": "0-10",
+			"name": "LLRU Refrigeration Design 06/2021",
+			"price": "55.0000",
+			"quantity": "127.3500",
+			"translation": "LLRU Refrigeration Design 06/2021",
+			"measure": {
+				"name": "работни часове",
+				"alternativeName": "hours"
+			}
+		},
+		{
+			"code": "0-10",
+			"name": "LLRU Refrigeration Design abroad 06/2021",
+			"price": "65.0000",
+			"quantity": "23.0833",
+			"translation": "LLRU Refrigeration Design abroad 06/2021",
+			"measure": {
+				"name": "работни часове",
+				"alternativeName": "hours"
+			}
+		},
+		{
+			"code": "0-10",
+			"name": "MOWI 06/2021",
+			"price": "55.0000",
+			"quantity": "3.4667",
+			"translation": "MOWI 06/2021",
+			"measure": {
+				"name": "работни часове",
+				"alternativeName": "hours"
+			}
+		},
+		{
+			"code": "0-02",
+			"name": "UVS Revit 06/2021",
+			"price": "35.0000",
+			"quantity": "57.0000",
+			"translation": "UVS Revit 06/2021",
+			"measure": {
+				"name": "работни часове",
+				"alternativeName": "hours"
+			}
+		},
+		{
+			"code": "0-03",
+			"name": "UVS(AB) Revit 06/2021",
+			"price": "35.0000",
+			"quantity": "56.8333",
+			"translation": "UVS(AB) Revit 06/2021",
+			"measure": {
+				"name": "работни часове",
+				"alternativeName": "hours"
+			}
+		},
+		{
+			"code": "0-10",
+			"name": "Administration 06/2021",
+			"price": "25.0000",
+			"quantity": "10.0000",
+			"translation": "Administration 06/2021",
+			"measure": {
+				"name": "работни часове",
+				"alternativeName": "hours"
+			}
+		},
+		{
+			"code": "0-11",
+			"name": "Management fee 06/2021",
+			"price": "500.0000",
+			"quantity": "1.0000",
+			"translation": "Management fee 06/2021",
+			"measure": {
+				"name": "бр.",
+				"alternativeName": "pcs."
+			}
 		}
+	],
+	"discountType": "percentage",
+	"discount": 0,
+	"notes": null,
+	"noTaxReason": null,
+	"created_at": "2021-07-07T16:12:17.000000Z",
+	"updated_at": "2021-07-08T09:23:31.000000Z",
+	"originalDate": "2021-07-08T13:13:17.000000Z",
+	"originalInSystem": 1,
+	"originalNumber": null,
+	"summary": null,
+	"introduction": null,
+	"company": {
+		"name": "Калениум ООД",
+		"bulstat": "204217925",
+		"hasVatNumber": true,
+		"vatNumber": "BG204217925",
+		"city": "София",
+		"address": "Държава: БЪЛГАРИЯ\nОбласт: София (столица), Община: Столична\nНаселено място: гр. София, п.к. 1504\nр-н Оборище\nбул./ул. ул. Оборище № 1, бл. -, вх. Б, ет. 2, ап. 4",
+		"issuer": "Барт Гилберт Р. Ван Брюсел",
+		"hasTranslation": true,
+		"logoUrl": "https://i.imgur.com/OVWU9oO.png",
+		"showLogoOnInvoices": true,
+		"nameEn": "Caelenium Ltd.",
+		"cityEn": "Sofia",
+		"addressEn": "1, Oborishte Str., entr. B, fl. 2",
+		"issuerEn": "Bart Van Bruessel"
 	}
+}
 }
