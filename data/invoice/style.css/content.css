@@ -1,3 +1,7 @@
+@page {
+    margin-top: 40px;
+}
+
 body {
     margin: 0;
 }
@@ -26,7 +30,6 @@ table {
     width: 210mm;
     padding: 10mm;
     position: relative;
-    page-break-after: auto;
     font-size: 13px;
     font-family: "Noto Sans", Helvetica, Arial, sans-serif;
     color: #000;
@@ -93,8 +96,10 @@ table {
 }
 /* blocks */
 .template .template-header {
+    margin-top: -40px;
     margin-bottom: 35px;
 }
+
 .template .template-extra-data-row {
     margin: 5px 0;
     padding: 3px 0;
@@ -150,6 +155,12 @@ table {
 .bankdetails-data td {
     padding: 3px;
 }
+
+.template .template-signatures-container > div {
+    page-break-inside: avoid;
+}
+
+
 .template .template-signature {
 	display: block;
 	height: 30px;
