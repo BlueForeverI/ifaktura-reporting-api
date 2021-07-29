@@ -17,7 +17,7 @@
         "$$date": 1612813336724
     },
     "modificationDate": {
-        "$$date": 1627239562301
+        "$$date": 1627590083916
     },
     "_id": "V9nLh7J1qmpgYWck",
     "$entitySet": "templates",
@@ -25,7 +25,6 @@
         "shortid": "Y-NI0EkF3u"
     },
     "resources": {
-        "defaultLanguage": "bg",
         "items": [
             {
                 "shortid": "vYESP5Ok4c",
@@ -35,7 +34,8 @@
                 "shortid": "AKcXrq_221",
                 "entitySet": "data"
             }
-        ]
+        ],
+        "defaultLanguage": "bg"
     },
     "extensions": {
         "scripts": {
@@ -48,5 +48,15 @@
     },
     "phantom": {
         "fitToPage": true
-    }
+    },
+    "pdfOperations": [
+        {
+            "type": "merge",
+            "templateShortid": "T-xDl4BU3H",
+            "mergeWholeDocument": true,
+            "renderForEveryPage": false,
+            "mergeToFront": true,
+            "enabled": true
+        }
+    ]
 }

@@ -1,0 +1,685 @@
+{
+    "app": {
+        "validationErrorsMessage": "Please correct the following errors in order to continue:",
+        "header": {
+            "nav": {
+                "dashboard": "Dashboard",
+                "invoices": "Invoices",
+                "documents": "Documents",
+                "clients": "Clients",
+                "products": "Products"
+            },
+            "userMenu": {
+                "userData": "Profile",
+                "myUsers": "My users",
+                "myCompanies": "My companies",
+                "exit": "Exit"
+            }
+        },
+        "sidebar": {
+            "createCompany": "Create new company",
+            "manageCompanies": "Manage companies",
+            "dropdown": {
+                "setInitial": "Set initial",
+                "createInvoice": "Create invoice",
+                "manageClients": "Manage clients",
+                "manageUsers": "Manage users",
+                "manageProducts": "Manage products",
+                "companySettings": "Company settings"
+            }
+        },
+        "dashboard": {
+            "title": "Dashboard",
+            "issuer": "Issuer",
+            "bulstat": "UIC (Bulstat)",
+            "newInvoice": "new invoice",
+            "newClient": "new client",
+            "newProduct": "new product",
+            "invoices": "Invoices",
+            "invoiceAmounts": "Invoices amounts",
+            "taxAmounts": "VAT amounts",
+            "total": "Total",
+            "paid": "Paid",
+            "unpaid": "Unpaid",
+            "invoicesAmount": "Amounts on invoices",
+            "vat": "VAT",
+            "rangePicker": {
+                "thisYear": "This year",
+                "lastYear": "Last year",
+                "thisMonth": "This month",
+                "lastMonth": "Last month",
+                "lastThreeMonths": "Last three months",
+                "lastSixMonths": "Last six months",
+                "sinceTheBeginning": "Since the beginning",
+                "customRangeLabel": "Custom",
+                "applyLabel": "Apply"
+            }
+        },
+        "login": {
+            "title": "Login",
+            "username": "Username",
+            "usernameRequired": "The field Username should not be empty",
+            "password": "Password",
+            "passwordRequired": "The field Password should not be empty",
+            "noAccount": "No account? you can register ",
+            "register": "here",
+            "errors": {
+                "These credentials do not match our records.": "Wrong username or password",
+                "genericError": "Server communication failure. Please try again later"
+            }
+        },
+        "register": {
+            "title": "Register",
+            "firstName": "First Name",
+            "firstNameRequired": "The field First Name is required",
+            "lastName": "Last Name",
+            "email": "Email",
+            "emailRequired":"The field Email is required",
+            "emailInvalid": "Invalid Email",
+            "companyName": "Company Name",
+            "companyNameRequired":"The field Company Name is required",
+            "bulstat":"UIC",
+            "bulstatRequired":"The field UIC is required",
+            "bulstatInvalid": "Invalid UIC",
+            "city": "City",
+            "cityRequired":"The field City is required",
+            "address":"Registration Address",
+            "addressRequired":"The field Registration Address is required",
+            "issuer": "Issuer",
+            "issuerRequired":"The field Issuer is required",
+            "termsAgreement": "I read and agree to the ",
+            "termsAgreementLink": "terms and agreements",
+            "success": "Registration request was sent successfully. Our team will review your details and will send you a confirmation email.",
+            "hasAccount": "Already have an account? You can login-in ",
+            "login": "here",
+            "errors": {
+                "generic": "Failed to submit your application details. Please review your details or contacts us directly at admin@ifaktura.bg"
+            }
+        },
+        "accountConfirmation": {
+            "title": "Account confirmation",
+            "password": "Password",
+            "passwordRequired": "The field Password should not be empty",
+            "passwordStrength": "The password should be at least 6 symbols",
+            "repeatPassword": "Repeat password",
+            "repeatPasswordRequired": "You have to confirm the password",
+            "repeatPasswordMismatch": "The passwords do not match",
+            "submit": "Confirm",
+            "passwordChangeSuccessful": "Password changed successfully. ",
+            "clickHereToLogin": "Click here to login",
+            "errors": {
+                "unknown": "Unknown user"
+            }
+        },
+        "companies": {
+            "title": "Manage companies",
+            "search": "Search",
+            "newCompany": "нова фирма",
+            "columns": {
+                "name": "Name",
+                "issuer": "A.P",
+                "bulstat": "UIC (Bulstat)",
+                "vatNumber": "VAT Number"
+            },
+            "noDataMessage": "No companies found",
+            "deleteCompanyMessage": "Are you sure you want to delete this element?",
+            "new": {
+                "title": "New company",
+                "tabs": {
+                    "generalInformation": "General information",
+                    "companyLogo": "Company logo",
+                    "bankAccounts": "Bank accounts",
+                    "measurementUnits": "Units"
+                },
+                "generalInfo": {
+                    "title": "Company information",
+                    "alternateLanguage": "Alternatetive language in invoices",
+                    "invoiceSequence": "Invoice sequence",
+                    "companyName": "Company name",
+                    "companyNameRequired": "The field Company name should not be empty",
+                    "bulstat": "UIC (Bulstat)",
+                    "bulstatRequired": "The field UIC is required",
+                    "hasVatNumber": "Has VAT number",
+                    "vatNumber": "VAT number",
+                    "city": "City",
+                    "cityRequired": "The field City should not be empty",
+                    "address": "Registration address",
+                    "addressRequired": "The field Registration address should not be empty",
+                    "issuer": "Accountable person",
+                    "issuerRequired": "The field Accountable person should not be empty",
+                    "invoiceEmailTextTemplate": "Invoice email template text",
+                    "hasTranslations": "I'll issue in alternative language",
+                    "invoiceSequenceNumber": "Sequence number",
+                    "create": "Create",
+                    "cancel": "Cancel",
+                    "save": "Save",
+                    "errors": {
+                        "title": "The following errors occured:",
+                        "The name has already been taken.": "A company with the same name already exists",
+                        "The bulstat has already been taken.": "A company with the same UIC already exists"
+                    }
+                },
+                "companyLogo": {
+                    "title": "Фирмено лого",
+                    "inSystemPanel": "In system panel",
+                    "showOnlyNameInSystemPanel": "Show only company name in system panel",
+                    "showOnlyLogoInSystemPanel": "Show only company logo in system panel",
+                    "onInvoices": "On invoices",
+                    "showOnlyNameOnInvoices": "Show only company name on invoices",
+                    "showLogoAndNameOnInvoices": "Show company logo and name on invoices",
+                    "save": "Save",
+                    "chooseFie": "Choose file",
+                    "recommendedLogoSize": "Recomended size 350x90 px",
+                    "delete": "Delete"
+                },
+                "bankAccounts": {
+                    "title": "Bank accounts",
+                    "search": "Search",
+                    "newBankAccount": "new bank account",
+                    "noDataMessage": "No bank accounts found",
+                    "columns": {
+                        "name": "Name",
+                        "bankName": "Bank name",
+                        "iban": "IBAN",
+                        "bicCode": "BIC/Swift Code"
+                    },
+                    "new": {
+                        "title": "New Bank Account",
+                        "bankNameInfo": "A name that gives you some additional information (eg. \"primary account\", \"foreign account in euro\" и т.н)",
+                        "save": "Save",
+                        "create": "Create",
+                        "cancel": "Cancel",
+                        "name": "Name",
+                        "nameRequired": "The field Name should not be empty",
+                        "bankName": "Bank name",
+                        "bankNameRequired": "The field Bank name should not be empty",
+                        "iban": "IBAN",
+                        "ibanRequired": "The field IBAN should not be empty",
+                        "bicCode": "BIC/Swift Code",
+                        "bicCodeRequired": "The field BIC/Swift Code should not be empty",
+                        "nameAlternative": "Bank En",
+                        "nameAlternativeRequired": "The field Bank En should not be empty",
+                        "nameAlternativeMessage": "Will be seen on invoices in English"
+                    },
+                    "deleteBankAccountMessage": "Are you sure you want to delete this element?"
+                },
+                "measures": {
+                    "title": "Units",
+                    "search": "Search",
+                    "newMeasure": "new unit",
+                    "noDataMessage": "No units found",
+                    "columns": {
+                        "name": "Unit"
+                    },
+                    "new": {
+                        "title": "New Unit",
+                        "save": "Save",
+                        "create": "Create",
+                        "cancel": "Cancel",
+                        "name": "Unit",
+                        "nameRequired": "The field Unit should not be empty",
+                        "nameAlternative": "Name",
+                        "nameAlternativeRequired": "The field Unit should not be empty",
+                        "nameAlternativeMessage": "Will be seen on invoices in English"
+                    },
+                    "deleteMeasureMessage": "Are you sure you want to delete this element?"
+                }
+            }
+        },
+        "clients": {
+            "title": "Manage Clients",
+            "search": "Search",
+            "newClient": "new client",
+            "columns": {
+                "name": "Name",
+                "issuer": "A.P",
+                "bulstat": "UIC (Bulstat)",
+                "vatNumber": "VAT Number"
+            },
+            "noDataMessage": "No clients found",
+            "deleteClientMessage": "Are you sure you want to delete this element?",
+            "new": {
+                "title": "Create a new client",
+                "tabs": {
+                    "generalInformation": "General Information"
+                },
+                "generalInfo": {
+                    "title": "Company information",
+                    "alternateLanguage": "Alternatetive language in invoices",
+                    "invoiceSequence": "Invoice sequence",
+                    "clientName": "Client name",
+                    "clientNameRequired": "The field Client name should not be empty",
+                    "bulstat": "UIC (Bulstat)",
+                    "bulstatRequired": "The field UIC is required",
+                    "hasVatNumber": "Has VAT number",
+                    "vatNumber": "VAT number",
+                    "city": "City",
+                    "cityRequired": "The field City should not be empty",
+                    "address": "Registration address",
+                    "addressRequired": "The field Registration address should not be empty",
+                    "issuer": "Accountable person",
+                    "issuerRequired": "The field Accountable person should not be empty",
+                    "notes": "Notes",
+                    "create": "Create",
+                    "cancel": "Cancel",
+                    "save": "Save",
+                    "errors": {
+                        "general": "Възникна грешка при създаването на клиент",
+                        "title": "The following errors occured:",
+                        "The name has already been taken.": "A client with the same name already exists",
+                        "clientExists": "A client with the same UIC already exists"
+                    }
+                }
+            }
+        },
+        "products": {
+            "title": "Manage Products",
+            "search": "Search",
+            "newProduct": "new product",
+            "noDataMessage": "No clients found",
+            "columns": {
+                "code": "Code",
+                "name": "Name",
+                "measure": "Unit",
+                "price": "Price"
+            },
+            "deleteProductMessage": "Are you sure you want to delete this element?",
+            "new": {
+                "title": "Create a new product",
+                "tabs": {
+                    "generalInformation": "General Information"
+                },
+                "generalInfo": {
+                    "title": "General product information",
+                    "name": "Name",
+                    "nameRequired": "The field Name cannot be empty",
+                    "nameAlternativeMessage": "Will be seen on invoices in English",
+                    "code": "Code",
+                    "price": "Price",
+                    "measure": "Measure",
+                    "notes": "Notes",
+                    "create": "Create",
+                    "cancel": "Cancel",
+                    "save": "Save",
+                    "errors": {
+                        "title": "The following errors occured:",
+                        "The name has already been taken.": "A product with the same name already exists",
+                        "The translation has already been taken.": "A product with the same translation already exists"
+                    }
+            }
+        }
+    },
+        "invoices": {
+            "title": "Invoice Management",
+            "documentsTitle": "Document management",
+            "search": "Search",
+            "noDataMessage": "No data found",
+            "detailedSearch": "detailed search",
+            "newInvoice": "new document",
+            "tabs": {
+                "invoices": "Invoices",
+                "documents": "Documents"
+            },
+            "columns": {
+                "number": "Number",
+                "client": "Client",
+                "type": "Type",
+                "date": "Date",
+                "totalSum": "Total Sum",
+                "tax": "VAT",
+                "status": "Status"
+            },
+            "footer": {
+                "totalCount": "Total of ",
+                "totalSum": " invoices with sum of ",
+                "vatSum": " and a total VAT of "
+            },
+            "type": {
+                "invoice": "Invoice",
+                "proforma": "Proforma Invoice",
+                "creditNote": "Credit Note",
+                "debitNote": "Debit Note",
+                "taxInvoice": "Invoice",
+                "offer": "Offer",
+                "protocol": "Protocol"
+            },
+            "status": {
+                "pending": "Pending",
+                "paid": "Paid",
+                "partiallyPaid": "Partially Paid"
+            },
+            "paymentMethod": {
+                "cash": "Cash",
+                "bankTransfer": "Bank Transfer",
+                "card": "Card",
+                "check": "Checuq/Voucher",
+                "onDelivery": "On Delivery",
+                "order": "Payment Order"
+            },
+            "payments": {
+                "title": "Invoice Payments",
+                "close": "Close",
+                "columns": {
+                    "amount": "Amount",
+                    "date": "Date"
+                },
+                "new": {
+                    "amountRequired": "The field Amount cannot be empty",
+                    "dateRequired": "The field Date cannot be empty",
+                    "add": "Add"
+                }
+            },
+            "clientMenu": {
+                "title": "Client actions",
+                "newInvoice": "Create New Invoice",
+                "invoiceList": "Invoice List",
+                "profile": "Client Profile"
+            },
+            "filter": {
+                "search": "Search",
+                "clear": "Clear Filter",
+                "type": "Type",
+                "client": "Client",
+                "bulstat": "UIC (Bulstat)",
+                "status": "Status",
+                "invoiceDate": "Invoice Date",
+                "value": "Value",
+                "to": "to"
+            },
+            "new": {
+                "title": "New Document",
+                "type": "Type",
+                "client": "Client",
+                "clientPlaceholder": "Choose Client",
+                "clientBulstat": "UIC (Bulstat)",
+                "issuedDate": "Issued Date",
+                "invoiceDate": "Invoice Date",
+                "validDate": "Valid Until",
+                "toInvoice": "To Invoice",
+                "originalDate": "From Date",
+                "originalInSystem": "Original Invoice",
+                "originalNotInSystem": "Issued outside the system",
+                "paymentMethod": "Payment Method",
+                "currency": "Currency",
+                "bankAccount": "Bank Account",
+                "deadline": "Deadline",
+                "selectBankAccount": "Select Bank Account",
+                "newBankAccount": "New Bank Account",
+                "products": {
+                    "name": "Product",
+                    "measure": "Unit",
+                    "quantity": "Quantity",
+                    "price": "Price",
+                    "total": "Total",
+                    "addProduct": "Add Product",
+                    "addProductText": "Add Product",
+                    "createProduct": "Create New Product",
+                    "delete": "Delete"
+                },
+                "noProductsMessage": "No products selected",
+                "notes": "Notes",
+                "value": "Value",
+                "discount": "Discount",
+                "taxBase": "Tax Base",
+                "zeroVatTax": "Zero Bat Tax",
+                "vatTax": "VAT",
+                "vatWarning": "Since the company has a VAT registration, the VAT is 20% by default",
+                "vatValues": {
+                    "0": "Zero VAT",
+                    "9": "9% VAT",
+                    "20": "20% VAT"
+                },
+                "noVatTaxReason": "No VAT Reason",
+                "invoiceTotal": "Invoice Total",
+                "recipient": "Recipient",
+                "author": "Author",
+                "createInvoice": "Create Invoice",
+                "saveInvoice": "Save Changes",
+                "recipientRequired": "The field Recipient is required",
+                "authorRequired": "The field Author is required",
+                "introduction": "Introduction",
+                "summary": "Offer Summary"
+            },
+            "deleteInvoiceMessage": "Are you sure you want to delete this element?",
+            "update": {
+                "title": "Edit",
+                "shouldTranslate": "english",
+                "preview": "Preview",
+                "payments": "Payments",
+                "sendByEmail": "Send by e-mail",
+                "duplicate": "Duplicate",
+                "share": "Share",
+                "downloadCopyAndOriginal": "Download Copy + Original",
+                "downloadOriginal": "Download Original",
+                "downloadCopy": "Download Copy",
+                "printCopyAndOriginal": "Print Copy + Original",
+                "printOriginal": "Print Original",
+                "printCopy": "Print Copy"
+            },
+            "preview": {
+                "edit": "Edit",
+                "forInvoice": "For invoice",
+                "fromDate": "From date",
+                "issuedDate": "Issued date",
+                "eventDate": "Event date",
+                "deadline": "Deadline",
+                "recipient": "Recipient",
+                "issuer": "Issuer",
+                "bulstat": "Bulstat",
+                "vatNumber": "VAT number",
+                "supplier": "Supplier",
+                "product": {
+                    "name": "Product name",
+                    "measure": "Unit",
+                    "quantity": "Quantity",
+                    "price": "Unit price",
+                    "value": "Value"
+                },
+                "valueText": "In words",
+                "noVatReason": "No VAT reason",
+                "paymentMethod": "Payment type",
+                "bankAccount": {
+                    "name": "Bank",
+                    "iban": "IBAN",
+                    "bic": "BIC"
+                },
+                "invoiceValue": "Subtotal",
+                "discount": "Discount",
+                "taxBase": "Tax base",
+                "vatPercentage": "VAT percentage",
+                "vatValue": "VAT amount",
+                "total": "Total",
+                "author": "Author",
+                "footer": "Created with iFaktura 2.01 - online invoicing system www.ifaktura.bg",
+                "emailForm": {
+                    "title": "Send by e-mail",
+                    "receiver": "Receiver",
+                    "receiverRequired": "The field Receiver should not be empty",
+                    "message": "Message",
+                    "messageRequired": "The field Message should no be empty",
+                    "defaultMessage": "Attached you can find invoice №",
+                    "send": "Send",
+                    "cancel": "Cancel"
+                },
+                "shareDialog": {
+                    "title": "Share Invoice",
+                    "link": "Invoice Link",
+                    "copy": "Copy",
+                    "cancel": "Cancel",
+                    "copySuccess": "The link was copied successfully!"
+                }
+            },
+            "numbers": {
+                "0": "zero",
+                "1": "one",
+                "2": "two",
+                "3": "three",
+                "4": "four",
+                "5": "five",
+                "6": "six",
+                "7": "seven",
+                "8": "eight",
+                "9": "nine",
+                "10": "ten",
+                "11": "eleven",
+                "12": "twelve",
+                "13": "thirteen",
+                "14": "fourteen",
+                "15": "fifteen",
+                "16": "sixteen",
+                "17": "seventeen",
+                "18": "eighteen",
+                "19": "nineteen",
+                "20": "twenty",
+                "30": "thirty",
+                "40": "fourty",
+                "50": "fifty",
+                "60": "sixty",
+                "70": "seventy",
+                "80": "eighty",
+                "90": "ninety",
+                "100": "one hundred",
+                "200": "two hundred",
+                "300": "three hundred",
+                "400": "four hundred",
+                "500": "five hundred",
+                "600": "six hundred",
+                "700": "seven hundred",
+                "800": "eight hundred",
+                "900": "nine hundred",
+                "1000": "one thousand",
+                "thousands": "thousand",
+                "and": "and",
+                "currencies": {
+                    "BGN": {
+                        "single": "lev",
+                        "multiple": "leva",
+                        "subSingle": "stotinka",
+                        "subMultiple": "stotinki"
+                    },
+                    "USD": {
+                        "single": "dollar",
+                        "multiple": "dollars",
+                        "subSingle": "cent",
+                        "subMultiple": "cents"
+                    },
+                    "EUR": {
+                        "single": "euro",
+                        "multiple": "euro",
+                        "subSingle": "euro-cent",
+                        "subMultiple": "euro-cents"
+                    }
+                }
+            }
+        },
+        "footer": {
+            "notes": "© 2021, iFaktura, All rights reserved.",
+            "nav": {
+                "about": "About",
+                "prices": "Prices",
+                "careers": "Careers",
+                "contacts": "Contacts",
+                "faq": "FAQ"
+            }
+        },
+        "users": {
+          "title": "Manage users",
+          "search": "Search",
+          "newUser": "new user",
+          "noDataMessage": "No data found",
+          "columns": {
+            "name": "Name",
+            "email": "Email",
+            "role": "Role"
+          },
+          "new": {
+            "title": "Create new user",
+            "tabs": {
+              "generalInformation": "General information",
+              "permissions": "User permissions"
+            },
+            "successMessage": "The user has been added to the following companies:<br /> -{{companies}}<br /> An email has been sent to <strong>{{user}}</strong>",
+            "generalInfo": {
+              "title": "General information",
+              "email": "Email",
+              "firstName": "First name",
+              "lastName": "Last name",
+              "language": "Language",
+              "role": "Role",
+              "nextPage": "Next",
+              "save": "Save",
+              "cancel": "Cancel",
+              "emailRequired": "The field Email should not be empty",
+              "firstNameRequired": "The field First name should not be empty"
+            },
+            "permissions": {
+              "title": "User permissions",
+              "permissions": {
+                "create": "Create",
+                "update": "Update",
+                "delete": "Delete",
+                "view": "View"
+              },
+              "permissionGroups": {
+                "company": "Companies",
+                "invoice": "Invoices",
+                "client": "Clients",
+                "product": "Products",
+                "bank-account": "Bank Accounts",
+                "measure": "Units"
+              },
+              "save": "Save"
+            }
+        },
+        "deleteUserMessage": "Are you sure you want to delete this element?"
+    },
+    "profile": {
+        "title": "User Profile",
+        "changePassword": {
+            "title": "Change password",
+            "oldPassword": "Current password",
+            "newPassword": "New password",
+            "repeatPassword": "Repeat",
+            "save": "Save",
+            "changeSuccesful": "Password changed successfully",
+            "oldPasswordRequired": "The field Current password should not be empty",
+            "newPasswordRequired": "The field New password should not be empty",
+            "repeatPasswordRequired": "The field Repeat should not be empty",
+            "repeatIncorrect": "Please, repeat correctly the password",
+            "changeFailed": "Password change unsuccessfull"
+          },
+          "subscriptions": {
+            "title": "Subscriptions",
+            "subscriptions": "Active Subscriptions",
+                "columns": {
+                    "name": "Name",
+                    "activeDate": "Active Until",
+                    "amount": "Amount"
+                }
+          },
+          "paymentMethods": {
+              "title": "Payment Methods",
+              "creditCards": "Credit Cards",
+                "new": "add new card",
+                "columns": {
+                    "number": "Card Number",
+                    "holder": "Cardholder Name",
+                    "expiryDate": "Expiry Date"
+                },
+                "newCard": {
+                    "title": "Add a Card",
+                    "number": "Card Number",
+                    "cardNumberRequired": "The field Card Number is required",
+                    "invalidCardNumber": "Invalid card number",
+                    "holder": "Cardholder Name",
+                    "holderRequired": "The field Cardholder Name is required",
+                    "expiryDate": "Expiry Date",
+                    "expiryDatePlaceholder": "MM/YY",
+                    "expiryDateRequired": "The field Expiry Date is required",
+                    "add": "Add",
+                    "cancel": "Cancel"
+                }
+          }
+    }
+  }
+}

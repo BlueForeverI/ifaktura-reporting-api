@@ -17,143 +17,27 @@
         </style>
         <style>
             {#asset style.css @encoding=utf8}
-        </style>        
+        </style>      
+        <style>
+          @page {
+            margin-top: 440px;
+          }  
+        </style>  
     </head>
     <body>
 <div>
-  <div class="template-wrapper" id="invoice-print-page">
-    <div class="template invoice-template-container">
-      <div class="template-header">
-        <div class="template-invoice-data templat-eof-visible">
-          <div class="template-logo">
-            {{#if (equals options.language 'bg')}}
-              {{#if (equals options.stamp 'original')}}
-                <img class="template-stamp" src="{#asset stamp-original.png @encoding=dataURI}" />
-                <div class="template-stamp template-stamp-original"></div>
-              {{/if}}
-              {{#if (equals options.stamp 'copy')}}
-                <img class="template-stamp" src="{#asset stamp-copy.png @encoding=dataURI}" />
-                <div class="template-stamp template-stamp-original"></div>
-              {{/if}}
-            {{/if}}
-            {{#if (equals options.language 'en')}}
-              {{#if (equals options.stamp 'original')}}
-                <img class="template-stamp" src="{#asset stamp-original_en.png @encoding=dataURI}" />
-                <div class="template-stamp template-stamp-original"></div>
-              {{/if}}
-              {{#if (equals options.stamp 'copy')}}
-                <img class="template-stamp" src="{#asset stamp-copy_en.png @encoding=dataURI}" />
-                <div class="template-stamp template-stamp-original"></div>
-              {{/if}}
-            {{/if}}
-            {{#unless invoice.company.showLogoOnInvoices}}
-            {{#if (equals options.language 'bg')}}
-                <div class="template-logo-text">{{ invoice.company.name }}</div>
-            {{/if}}
-            {{#if (equals options.language 'en')}}
-                <div class="template-logo-text">{{ invoice.company.nameEn }}</div>
-            {{/if}}
-            {{/unless}}
-			{{#if invoice.company.showLogoOnInvoices}}
-            <img src="{{invoice.company.logoUrl}}"/>
-			{{/if}}
-          </div>
-          <div class="template-right-column templat-eof-visible">
-            <h2> {{ deepFind $localizedResource (concat 'app.invoices.type.' invoice.type) }}</h2>
-            <p>
-              <span class="template-number">№ {{ invoiceNumber invoice.number }}</span>
-            </p>
-			{{#if invoice.originalNumber}}
-            <p>
-              <span>{{ deepFind $localizedResource 'app.invoices.preview.forInvoice' }}</span>:
-              <span class="template-date">{{ invoiceNumber invoice.originalNumber }}</span>
-            </p>
-			{{/if}}
-			{{#if invoice.originalNumber}}
-            <p>
-              <span>{{ deepFind $localizedResource 'app.invoices.preview.fromDate' }}</span>:
-              <span class="template-date">{{ dateFormat invoice.originalDate }}</span>
-            </p>
-			{{/if}}
-            <p>
-              <span>{{ deepFind $localizedResource 'app.invoices.preview.issuedDate' }}</span>:
-              <span class="template-date">{{ dateFormat invoice.issuedDate }}</span>
-            </p>
-            <p>
-              <span>{{ deepFind $localizedResource 'app.invoices.preview.eventDate' }}</span>:
-              <span class="template-date">{{ dateFormat invoice.date }}</span>
-            </p>
-			{{#if invoice.deadline}}
-            <p>
-              <span>{{ deepFind $localizedResource 'app.invoices.preview.deadline' }}</span>:
-              <span class="template-date">{{ dateFormat invoice.deadline }}</span>
-            </p>
-			{{/if}}
-          </div>
-          <br class="clearboth">
+  <div class="template-wrapper">
+    <div class="template" style="margin-top: -20px">
+
+      {{#if invoice.introduction}}
+        <div class="template-section">
+          <h4 class="template-section-header">
+            {{ deepFind $localizedResource 'app.invoices.new.introduction' }}
+          </h4>
+
+          <p>{{ invoice.introduction }}</p>
         </div>
-      </div>
-
-      <div class="template-section">
-        <div class="template-left-column template-text-left template-target">
-          <h4 class="template-section-header">{{ deepFind $localizedResource 'app.invoices.preview.recipient' }}</h4>
-          <p class="template-highlight">
-            {{ tern options.shouldTranslate true invoice.client.nameEn invoice.client.name }}
-          </p>
-          <p>
-            <span class="template-bold-">{{ deepFind $localizedResource 'app.invoices.preview.issuer' }}</span>&nbsp;
-            <span>
-              {{ tern options.shouldTranslate true invoice.client.issuerEn invoice.client.issuer }}
-            </span>
-          </p>
-          <p>
-            <span class="template-bold-">{{ deepFind $localizedResource 'app.invoices.preview.bulstat' }}</span>&nbsp;
-            <span>{{invoice.client.bulstat}}</span>
-          </p>
-          <p>
-            <span class="template-bold-">{{ deepFind $localizedResource 'app.invoices.preview.vatNumber' }}</span>&nbsp;
-            <span>{{invoice.client.vatNumber}}</span>
-          </p>
-          <p>
-            <span>{{tern options.shouldTranslate true invoice.client.cityEn invoice.client.city}}
-              , {{tern options.shouldTranslate true invoice.client.addressEn invoice.client.address}}</span>
-          </p>
-        </div>
-
-        <div class="template-right-column template-text-left template-target">
-          <h4 class="template-section-header">{{ deepFind $localizedResource 'app.invoices.preview.supplier' }}</h4>
-          <p class="template-highlight">
-            {{tern options.shouldTranslate true invoice.company.nameEn invoice.company.name}}
-          </p>
-          <p>
-            <span class="template-bold-">{{ deepFind $localizedResource 'app.invoices.preview.issuer' }}</span>&nbsp;
-            <span>{{tern options.shouldTranslate true invoice.company.issuerEn invoice.company.issuer}}</span>
-          </p>
-          <p>
-            <span class="template-bold-">{{ deepFind $localizedResource 'app.invoices.preview.bulstat' }}</span>&nbsp;
-            <span>{{invoice.company.bulstat}}</span>
-          </p>
-          <p>
-            <span class="template-bold-">{{ deepFind $localizedResource 'app.invoices.preview.vatNumber' }}</span>&nbsp;
-            <span>{{invoice.company.vatNumber}}</span>
-          </p>
-          <p>
-            <span>{{tern options.shouldTranslate true invoice.company.addressEn invoice.company.address}}</span>
-          </p>
-
-        </div>
-        <br class="clearboth">
-      </div>
-
-	  {{#if invoice.introduction}}
-      <div class="template-section">
-        <h4 class="template-section-header">
-          {{ deepFind $localizedResource 'app.invoices.new.introduction' }}
-        </h4>
-
-        <p>{{ invoice.introduction }}</p>
-      </div>
-	  {{/if}}
+      {{/if}}
 
       <table class="template-objects-table" maxsize="661">
         <thead>
@@ -182,7 +66,7 @@
 		  {{/each}}
         </tbody>
       </table>
-      <div class="template-summary-data" style="padding-bottom:70px;">
+      <div class="template-summary-data">
         <div class="template-left-column">
           <div class="template-extra-data-row">
             <p>
@@ -326,3 +210,4 @@
   </div>
 </div>
     </body>
+    </html>

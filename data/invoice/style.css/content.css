@@ -1,13 +1,8 @@
-@page {
-    margin-top: 40px;
-}
 
 body {
     margin: 0;
 }
-.template-wrapper  {
-    padding:10px 0;
-}
+
 table {
     font-size: 12px;
     font-family: "Noto Sans", Helvetica, Arial, sans-serif;
@@ -42,6 +37,7 @@ table {
 	background-color: white;
      -webkit-print-color-adjust: exact
 }
+
 .template-entry {
     white-space: normal;
 }
@@ -79,6 +75,7 @@ table {
     background: none;
     background-repeat: no-repeat;
     background-position: left top;
+    margin-bottom: 30px;
 }
 .template .template-logo img {
     max-width: 350px;
@@ -93,11 +90,6 @@ table {
     -moz-background-clip: text;
     background-clip: text;
     color: black;
-}
-/* blocks */
-.template .template-header {
-    margin-top: -40px;
-    margin-bottom: 35px;
 }
 
 .template .template-extra-data-row {
@@ -125,27 +117,12 @@ table {
     line-height: 1px;
     clear: both;
 }
-.template .template-notes, .template .template-notes * {
-    border-top: 1px solid #414141;
-    font-size: 11px;
-    margin-top: 30px;
-    padding-top: 10px;
-    white-space: normal;
-}
-.simplebox .template {
-    margin: 20px auto 40px;
-}
+
 .template  .template-extra-data-row p {
     white-space: normal;
 }
 .templat-eof-visible {
     overflow: visible !important;
-}
-.template-paging {
-    font-size: 9px;
-    position: absolute;
-    bottom: 20px;
-    right: 40px;
 }
 .clearboth {
 	clear:both;
@@ -202,7 +179,6 @@ table {
 table.template-objects-table {
     border-collapse: collapse;
     width:100%;
-    margin-top: 20px;
 }
 table.template-objects-table td {
     padding: 5px;
@@ -212,7 +188,7 @@ table.template-objects-table thead th {
     color: white;
     border-bottom: 1px solid #CCC;
     background-color: #7F7F7F;
-    -webkit-print-color-adjust: exact
+    -webkit-print-color-adjust: exact;
 }
 
 table.template-objects-table tbody {
@@ -286,6 +262,7 @@ table.template-objects-table tbody tr:nth-child(odd) {
 .template .template-summary-data {
    padding-bottom: 10px;
    padding-top: 40px;
+   page-break-inside: avoid;
 } 
 .template .template-left-column p {
     white-space: normal;
@@ -300,9 +277,7 @@ div.template-invoice-data {
 .template-invoice-data .template-left-column p {
     padding-top:3px;
 }
-.template .template-objects-table-container {
-    margin-top: 40px;
-}
+
 .template-footer {
     font-size: 9px;
     font-style: italic;
@@ -314,15 +289,4 @@ div.template-invoice-data {
 .page-break {
     page-break-after: always;
     page-break-inside: avoid;
-}
-
-.space-top {
-    padding-top: 50px;
-}
-
-
-@media (max-width: 768px) {
-  .dropdown-menu.invoice-menu {
-    left: 0;
-  }
 }
