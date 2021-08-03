@@ -59,7 +59,7 @@ function dateFormat(date) {
 }
 
 function formatNumber(number) {
-  return parseFloat(number).toLocaleString('en-US', {minimumFractionDigits: 2});
+  return parseFloat(number).toLocaleString('en-US', {minimumFractionDigits: 2, maximumFractionDigits: 2});
 }
 
 function deepFind(obj, path) {
