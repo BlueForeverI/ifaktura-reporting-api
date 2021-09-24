@@ -31,10 +31,6 @@
 
       {{#if invoice.introduction}}
         <div class="template-section">
-          <h4 class="template-section-header">
-            {{ deepFind $localizedResource 'app.invoices.new.introduction' }}
-          </h4>
-
           <p>{{ invoice.introduction }}</p>
         </div>
       {{/if}}
@@ -182,10 +178,6 @@
 
 	  {{#if invoice.summary}}
       <div class="template-section">
-        <h4 class="template-section-header">
-          {{ deepFind $localizedResource 'app.invoices.new.summary' }}
-        </h4>
-
         <p>{{ invoice.summary }}</p>
       </div>
 	  {{/if}}
