@@ -74,7 +74,7 @@
             {{/each}}
             </p>
           </div>
-		  {{#if invoice.noTaxReason}}
+		  {{#if (and (equals invoice.vat 0) invoice.noTaxReason) }}
           <div class="template-extra-data-row">
             <p>
               {{ deepFind $localizedResource 'app.invoices.preview.noVatReason' }}:
