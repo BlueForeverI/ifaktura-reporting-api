@@ -95,7 +95,7 @@
             <div>
               <p>
                 <span>{{ deepFind $localizedResource 'app.invoices.preview.bankAccount.name' }}</span>:
-                <span class="template-bold">{{invoice.bankAccount.name}}</span>
+                <span class="template-bold">{{tern @root.options.shouldTranslate true invoice.bankAccount.alternativeBankName invoice.bankAccount.bankName}}</span>
               </p>
               <p>
                 <span>{{ deepFind $localizedResource 'app.invoices.preview.bankAccount.iban' }}</span>:
