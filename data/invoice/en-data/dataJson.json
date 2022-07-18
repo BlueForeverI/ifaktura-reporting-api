@@ -13,8 +13,11 @@
                 "userData": "Profile",
                 "myUsers": "My users",
                 "myCompanies": "My companies",
+                "guide": "User guide",
                 "exit": "Exit"
-            }
+            },
+            "companyInactiveMessage": "The selected company is inactive. You can renew your subscription ",
+            "updateSubscriptionLink": "here"
         },
         "sidebar": {
             "createCompany": "Create new company",
@@ -36,13 +39,15 @@
             "newClient": "new client",
             "newProduct": "new product",
             "invoices": "Invoices",
-            "invoiceAmounts": "Invoices amounts",
+            "invoiceAmounts": "Invoices amounts (no VAT)",
             "taxAmounts": "VAT amounts",
             "total": "Total",
             "paid": "Paid",
             "unpaid": "Unpaid",
-            "invoicesAmount": "Amounts on invoices",
-            "vat": "VAT",
+            "invoicesAmount": "Amount on invoices (no VAT):",
+            "vat": "VAT amount:",
+            "unpaidCount": "Unpaid amount (no VAT):",
+            "unpaidTaxAmount": "VAT not received amount:",
             "rangePicker": {
                 "thisYear": "This year",
                 "lastYear": "Last year",
@@ -52,17 +57,19 @@
                 "lastSixMonths": "Last six months",
                 "sinceTheBeginning": "Since the beginning",
                 "customRangeLabel": "Custom",
-                "applyLabel": "Apply"
+                "applyLabel": "Apply",
+                "months": "Jan,Feb,Mar,Apr,May,Jun,Jul,Aug,Sep,Oct,Nov,Dec"
             }
         },
         "login": {
             "title": "Login",
-            "username": "Username",
-            "usernameRequired": "The field Username should not be empty",
+            "username": "Email",
+            "usernameRequired": "The field Email should not be empty",
             "password": "Password",
             "passwordRequired": "The field Password should not be empty",
             "noAccount": "No account? you can register ",
             "register": "here",
+            "forgotPassword": "Forgot your password?",
             "errors": {
                 "These credentials do not match our records.": "Wrong username or password",
                 "genericError": "Server communication failure. Please try again later"
@@ -111,6 +118,31 @@
                 "unknown": "Unknown user"
             }
         },
+        "requestPasswordReset": {
+            "title": "Forgotten password",
+            "email": "Email",
+            "emailRequired": "The field Email should not be empty",
+            "submit": "Submit",
+            "passwordResetRequestSuccessful": "Password reset request successfully submitted. You will receive an email with the next steps.",
+            "errors": {
+                "unknown":"Unknown user"
+            }
+        },
+        "passwordReset": {
+            "title": "Password reset",
+            "password": "Password",
+            "passwordRequired": "The field Password should not be empty",
+            "passwordStrength": "The password should be at least 6 symbols",
+            "repeatPassword": "Repeat password",
+            "repeatPasswordRequired": "You have to confirm the password",
+            "repeatPasswordMismatch": "The passwords do not match",
+            "submit": "Confirm",
+            "passwordChangeSuccessful": "Password changed successfully. ",
+            "clickHereToLogin": "Click here to login",
+            "errors": {
+                "unknown": "Unknown user"
+            }
+        },
         "companies": {
             "title": "Manage companies",
             "search": "Search",
@@ -129,7 +161,8 @@
                     "generalInformation": "General information",
                     "companyLogo": "Company logo",
                     "bankAccounts": "Bank accounts",
-                    "measurementUnits": "Units"
+                    "measurementUnits": "Units",
+                    "plans": "Subscriptions"
                 },
                 "generalInfo": {
                     "title": "Company information",
@@ -149,7 +182,7 @@
                     "issuerRequired": "The field Accountable person should not be empty",
                     "invoiceEmailTextTemplate": "Invoice email template text",
                     "hasTranslations": "I'll issue in alternative language",
-                    "invoiceSequenceNumber": "Sequence number",
+                    "invoiceSequenceNumber": "Sequence numbers",
                     "create": "Create",
                     "cancel": "Cancel",
                     "save": "Save",
@@ -257,6 +290,10 @@
                     "cityRequired": "The field City should not be empty",
                     "address": "Registration address",
                     "addressRequired": "The field Registration address should not be empty",
+                    "phone": "Телефон",
+                    "phoneInvalid": "Невалиден телефон",
+                    "email": "Email",
+                    "emailInvalid": "Невалиден email",
                     "issuer": "Accountable person",
                     "issuerRequired": "The field Accountable person should not be empty",
                     "notes": "Notes",
@@ -327,7 +364,24 @@
                 "date": "Date",
                 "totalSum": "Total Sum",
                 "tax": "VAT",
-                "status": "Status"
+                "status": "Status",
+                "currency": "Currency"
+            },
+            "export": {
+                "number": "Invoice Number",
+                "type": "Type",
+                "issuedDate": "Issued Date",
+                "client": "Client Name",
+                "address": "Address",
+                "issuer": "Issuer",
+                "uic": "UIC",
+                "vatNumber": "VAT Number",
+                "total": "Total",
+                "vat": "VAT",
+                "products": "Products",
+                "deadline": "Deadline",
+                "status": "Status",
+                "currency": "Currency"
             },
             "footer": {
                 "totalCount": "Total of ",
@@ -341,7 +395,8 @@
                 "debitNote": "Debit Note",
                 "taxInvoice": "Invoice",
                 "offer": "Offer",
-                "protocol": "Protocol"
+                "protocol": "Protocol",
+                "nota": "Debit nota"
             },
             "status": {
                 "pending": "Pending",
@@ -382,13 +437,14 @@
                 "client": "Client",
                 "bulstat": "UIC (Bulstat)",
                 "status": "Status",
-                "invoiceDate": "Invoice Date",
+                "invoiceDate": "Issued Date",
                 "value": "Value",
                 "to": "to"
             },
             "new": {
                 "title": "New Document",
                 "type": "Type",
+                "sequence": "Sequence",
                 "client": "Client",
                 "clientPlaceholder": "Choose Client",
                 "clientBulstat": "UIC (Bulstat)",
@@ -414,7 +470,8 @@
                     "addProduct": "Add Product",
                     "addProductText": "Add Product",
                     "createProduct": "Create New Product",
-                    "delete": "Delete"
+                    "delete": "Delete",
+                    "error": "There is an error in one or more products. Please use the \"Add Product\" option."
                 },
                 "noProductsMessage": "No products selected",
                 "notes": "Notes",
@@ -435,10 +492,14 @@
                 "author": "Author",
                 "createInvoice": "Create Invoice",
                 "saveInvoice": "Save Changes",
+                "clientRequired": "Please select a client",
+                "issuedDateRequired": "The field Issued Date is required",
+                "dateRequired":"The field Date is required",
                 "recipientRequired": "The field Recipient is required",
                 "authorRequired": "The field Author is required",
                 "introduction": "Introduction",
-                "summary": "Offer Summary"
+                "summary": "Offer Summary",
+                "invalidInvoiceMessage": "There are errors in the form below. Please correct all errors in order to submit a valid document."
             },
             "deleteInvoiceMessage": "Are you sure you want to delete this element?",
             "update": {
@@ -501,6 +562,7 @@
                     "send": "Send",
                     "cancel": "Cancel"
                 },
+                "emailSent": "The invoice was sent successfully!",
                 "shareDialog": {
                     "title": "Share Invoice",
                     "link": "Invoice Link",
@@ -566,14 +628,14 @@
                     "EUR": {
                         "single": "euro",
                         "multiple": "euro",
-                        "subSingle": "euro-cent",
-                        "subMultiple": "euro-cents"
+                        "subSingle": "cent",
+                        "subMultiple": "cents"
                     }
                 }
             }
         },
         "footer": {
-            "notes": "© 2021, iFaktura, All rights reserved.",
+            "notes": "© 2022, iFaktura, All rights reserved.",
             "nav": {
                 "about": "About",
                 "prices": "Prices",
@@ -588,7 +650,8 @@
           "newUser": "new user",
           "noDataMessage": "No data found",
           "columns": {
-            "name": "Name",
+            "firstName": "First Name",
+            "lastName": "Last Name",
             "email": "Email",
             "role": "Role"
           },
@@ -610,7 +673,10 @@
               "save": "Save",
               "cancel": "Cancel",
               "emailRequired": "The field Email should not be empty",
-              "firstNameRequired": "The field First name should not be empty"
+              "firstNameRequired": "The field First name should not be empty",
+                "errors": {
+                    "userAlreadyExists": "A user with this email already exists"
+                }
             },
             "permissions": {
               "title": "User permissions",
@@ -621,6 +687,8 @@
                 "view": "View"
               },
               "permissionGroups": {
+                "full": "Full access",
+                "clear": "Clear",
                 "company": "Companies",
                 "invoice": "Invoices",
                 "client": "Clients",
@@ -632,6 +700,42 @@
             }
         },
         "deleteUserMessage": "Are you sure you want to delete this element?"
+    },
+    "billing": {
+        "title": "Subscription Type",
+        "plans": {
+            "monthly": {
+                "title": "monthly",
+                "description": "{{price}} BGN/month (VAT excluded), paid every month"
+            },
+            "yearly": {
+                "title": "yearly",
+                "description": "{{price}} BGN/yearly (VAT excluded), one-time payment"
+            },
+            "trial": {
+                "title": "trial",
+                "description": "free 1-month trial"
+            }
+        },
+        "current": {
+            "yours": "Your  ",
+            "expiresIn": " subscription expires on ",
+            "expiredIn": " has expired on ",
+            "possibleExtensions": ". You can extend it with one of the options below."
+        },
+        "redirectMessage": "After a few seconds you will be redirected to the site Paysera.com, so you can complete the payment. If this doesn't happen automatically, you can click ",
+        "hereLabel": "here",
+        "submit": "Pay",
+        "result": {
+            "success": {
+                "title": "Payment Successful!",
+                "message": "The payment for order #{{orderId}} Has been successful!. Once we receive a confirmation from the bank about your payment, your subscription will be reviewed."
+            },
+            "cancel": {
+                "title": "Payment Cancelled!",
+                "message": "The payment has been cancelled. Please try again or contact us."
+            }
+        }
     },
     "profile": {
         "title": "User Profile",

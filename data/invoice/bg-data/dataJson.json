@@ -7,14 +7,17 @@
                 "invoices": "Фактури",
                 "documents": "Документи",
                 "clients": "Клиенти",
-                "products": "Стоки"
+                "products": "Продукти"
             },
             "userMenu": {
                 "userData": "Профил",
                 "myUsers": "Моите потребители",
                 "myCompanies": "Моите фирми",
+                "guide": "Ръководство за потребителя",
                 "exit": "Изход"
-            }
+            },
+            "companyInactiveMessage": "Избраната фирма е неактивна. Можете да подновите абонамента от ",
+            "updateSubscriptionLink": "тук"
         },
         "sidebar": {
             "createCompany": "Създай нова фирма",
@@ -24,7 +27,7 @@
                 "createInvoice": "Създай фактура",
                 "manageClients": "Управление на клиенти",
                 "manageUsers": "Управление на потребители",
-                "manageProducts": "Управление на стоки",
+                "manageProducts": "Управление на продукти",
                 "companySettings": "Настройки на фирмата"
             }
         },
@@ -36,13 +39,15 @@
             "newClient": "нов клиент",
             "newProduct": "нов продукт",
             "invoices": "Фактури",
-            "invoiceAmounts": "Суми по фактури",
+            "invoiceAmounts": "Суми по фактури без включен ДДС",
             "taxAmounts": "Суми по ДДС",
             "total": "oбщо",
             "paid": "платени",
             "unpaid": "неплатени",
-            "invoicesAmount": "Сума по фактури",
-            "vat": "ДДС",
+            "invoicesAmount": "Суми по фактури без ДДС:",
+            "vat": "Сума на начислено ДДС:",
+            "unpaidCount": "Сума на неплатени фактури без ДДС:",
+            "unpaidTaxAmount": "Сума на несъбрано ДДС:",
             "rangePicker": {
                 "thisYear": "Тази година",
                 "lastYear": "Миналата година",
@@ -52,17 +57,19 @@
                 "lastSixMonths": "Последните шест месеца",
                 "sinceTheBeginning": "От началото",
                 "customRangeLabel": "Период по избор",
-                "applyLabel": "Приложи"
+                "applyLabel": "Приложи",
+                "months": "януари,февруари,март,април,май,юни,юли,август,септември,октомври,ноември,декември"
             }
         },
         "login": {
             "title": "Вход",
-            "username": "Потребителско Име",
-            "usernameRequired": "Полето Потребителско Име не може да бъде празно",
+            "username": "Email",
+            "usernameRequired": "Полето Email не може да бъде празно",
             "password": "Парола",
             "passwordRequired": "Полето Парола не може да бъде празно",
             "noAccount": "Нямате акаунт? Може да се регистрирате ",
             "register": "тук",
+            "forgotPassword": "Забравена парола?",
             "errors": {
                 "These credentials do not match our records.": "Грешен потребител или парола",
                 "genericError": "Грешка при свързването със сървъра. Моля, опитайте отново по-късно"
@@ -111,6 +118,31 @@
                 "unknown": "Непознат потребител"
             }
         },
+        "requestPasswordReset": {
+            "title": "Забравена парола",
+            "email": "Email",
+            "emailRequired": "Полето Email не може да бъде празно",
+            "submit": "Потвърди",
+            "passwordResetRequestSuccessful": "Успешно заявихте смяна на паролата. Ще получите email с подробни инструкции.",
+            "errors": {
+                "unknown":"Непознат потребител"
+            }
+        },
+        "passwordReset": {
+            "title": "Смяна на паролата",
+            "password": "Парола",
+            "passwordRequired": "Полето Парола не може да бъде празно",
+            "passwordStrength": "Паролата трябва да е от поне 6 символа",
+            "repeatPassword": "Повторете паролата",
+            "repeatPasswordRequired": "Трябва да потвърдите паролата",
+            "repeatPasswordMismatch": "Паролите трябва да съвпадат",
+            "submit": "Потвърди",
+            "passwordChangeSuccessful": "Успешно сменихте вашата парола. ",
+            "clickHereToLogin": "Кликнете тук, за да се логнете",
+            "errors": {
+                "unknown": "Непознат потребител"
+            }
+        },
         "companies": {
             "title": "Управление на фирми",
             "search": "Търси",
@@ -129,7 +161,8 @@
                     "generalInformation": "Обша информация",
                     "companyLogo": "Фирмено лого",
                     "bankAccounts": "Банкови сметки",
-                    "measurementUnits": "Мерни единици"
+                    "measurementUnits": "Мерни единици",
+                    "plans": "Абонамент"
                 },
                 "generalInfo": {
                     "title": "Данни за фирмата",
@@ -149,7 +182,7 @@
                     "issuerRequired": "Полето М.О.Л не може да бъде празно",
                     "invoiceEmailTextTemplate": "Текст при изпращане на фактура",
                     "hasTranslations": "Ще издавам фактури на английски език",
-                    "invoiceSequenceNumber": "Пореден номер",
+                    "invoiceSequenceNumber": "Поредни номера",
                     "create": "Създай",
                     "cancel": "Отказ",
                     "save": "Запази",
@@ -257,6 +290,10 @@
                     "cityRequired": "Полето Град не може да бъде празно",
                     "address": "Адрес по регистрация",
                     "addressRequired": "Полето Адрес по регистрация не може да бъде празно",
+                    "phone": "Телефон",
+                    "phoneInvalid": "Невалиден телефон",
+                    "email": "Email",
+                    "emailInvalid": "Невалиден email",
                     "issuer": "М.О.Л",
                     "issuerRequired": "Полето М.О.Л не може да бъде празно",
                     "notes": "Забележки",
@@ -273,7 +310,7 @@
             }
         },
         "products": {
-            "title": "Управление на стоки",
+            "title": "Управление на продукти",
             "search": "Търси",
             "newProduct": "нов продукт",
             "noDataMessage": "Няма намерени резултати",
@@ -328,7 +365,24 @@
                 "date": "Дата на събитие",
                 "totalSum": "Обща сума",
                 "tax": "Начислено ДДС",
-                "status": "Статус"
+                "status": "Статус",
+                "currency": "Валута"
+            },
+            "export": {
+                "number": "Номер на фактурата",
+                "type": "Тип",
+                "issuedDate": "Дата на фактурата",
+                "client": "Име на клиент",
+                "address": "Адрес",
+                "issuer": "МОЛ",
+                "uic": "БУЛСТАТ",
+                "vatNumber": "ДДС номер",
+                "total": "Основа по сделката",
+                "vat": "ДДС по сделката",
+                "products": "Предмет на сделката",
+                "deadline": "Падеж на фактурата",
+                "status": "Статус",
+                "currency": "Валута"
             },
             "footer": {
                 "totalCount": "Общо ",
@@ -342,7 +396,8 @@
                 "debitNote": "Дебитно известие",
                 "taxInvoice": "Фактура",
                 "offer": "Оферта",
-                "protocol": "Протокол"
+                "protocol": "Протокол",
+                "nota": "Дебит нота"
             },
             "status": {
                 "all": "Всички",
@@ -384,13 +439,14 @@
                 "client": "Клиент",
                 "bulstat": "ЕИК (Булстат)",
                 "status": "Статус",
-                "invoiceDate": "Дата на събитие",
+                "invoiceDate": "Дата на издаване",
                 "value": "Обща сума",
                 "to": "до"
             },
             "new": {
                 "title": "Нов документ",
                 "type": "Тип",
+                "sequence": "Пореден номер",
                 "client": "Клиент",
                 "clientPlaceholder": "Избери клиент",
                 "clientBulstat": "ЕИК (Булстат)",
@@ -416,9 +472,10 @@
                     "addProduct": "Добави ред",
                     "addProductText": "Създай продукт",
                     "createProduct": "Създай нов продукт",
-                    "delete": "Изтрий"
+                    "delete": "Изтрий",
+                    "error": "Грешка при един или повече продукти. Моля използвайте опцията \"Създай нов продукт\"."
                 },
-                "noProductsMessage": "Няма избрани стоки",
+                "noProductsMessage": "Няма избрани продукти",
                 "notes": "Забележки",
                 "value": "Стойност",
                 "discount": "Отстъпка",
@@ -437,10 +494,14 @@
                 "author": "Съставил",
                 "createInvoice": "Запиши",
                 "saveInvoice": "Запази промените",
+                "clientRequired": "Моля изберете клиент",
+                "issuedDateRequired": "Полето Дата на издаване е задължително",
+                "dateRequired":"Полето Дата на събитие е задължително",
                 "recipientRequired": "Полето Получател е задължително",
                 "authorRequired": "Полето Автор е задължително",
                 "introduction": "Увод",
-                "summary": "Заключителен текст на офертата"
+                "summary": "Заключителен текст на офертата",
+                "invalidInvoiceMessage": "Има грешки при попълнените данни. Моля поправете ги, за да създадете документ."
             },
             "deleteInvoiceMessage": "Сигурни ли сте че искате да изтриете този елемент?",
             "update": {
@@ -503,6 +564,7 @@
                     "send": "Изпрати",
                     "cancel": "Отказ"
                 },
+                "emailSent": "Фактурата беше изпратена успешно!",
                 "shareDialog": {
                     "title": "Сподели фактура",
                     "link": "Линк към фактурата",
@@ -568,14 +630,14 @@
                     "EUR": {
                         "single": "евро",
                         "multiple": "евро",
-                        "subSingle": "евроцент",
-                        "subMultiple": "евроцента"
+                        "subSingle": "цент",
+                        "subMultiple": "цента"
                     }
                 }
             }
         },
         "footer": {
-            "notes": "© 2021, iFaktura, Всички права запазени.",
+            "notes": "© 2022, iFaktura, Всички права запазени.",
             "nav": {
                 "about": "За нас",
                 "prices": "Цени",
@@ -590,7 +652,8 @@
           "newUser": "нов потребител",
           "noDataMessage": "Няма намерени резултати",
           "columns": {
-            "name": "Име",
+            "firstName": "Име",
+            "lastName": "Фамилия",
             "email": "Email",
             "role": "Роля"
           },
@@ -612,7 +675,10 @@
               "save": "Запази",
               "cancel": "Отказ",
               "emailRequired": "Полето Email не може да бъде празно",
-              "firstNameRequired": "Полето Име не може да бъде празно"
+              "firstNameRequired": "Полето Име не може да бъде празно",
+              "errors": {
+                  "userAlreadyExists": "Потребител с такъв email вече съществува"
+              }
             },
             "permissions": {
               "title": "Потребителски права",
@@ -623,10 +689,12 @@
                 "view": "Четене"
               },
               "permissionGroups": {
+                "full": "Пълни права",
+                "clear": "Изчисти",
                 "company": "Фирми",
                 "invoice": "Фактури",
                 "client": "Клиенти",
-                "product": "Стоки",
+                "product": "Продукти",
                 "bank-account": "Банкови сметки",
                 "measure": "Мерни единици"
               },
@@ -635,8 +703,48 @@
           },
           "deleteUserMessage": "Сигурни ли сте, че скате да изтриете този елемент?"
         },
+        "billing": {
+            "title": "Тип абонамент",
+            "plans": {
+                "monthly": {
+                    "title": "месечен",
+                    "description": "{{price}}лв/месец без ДДС, плащане всеки месец"
+                },
+                "yearly": {
+                    "title": "годишен",
+                    "description": "{{price}}лв/година без ДДС, еднократно плащане"
+                },
+                "trial": {
+                    "title": "безплатен",
+                    "description": "безплатен едномесечен абонамент"
+                }
+            },
+            "current": {
+                "yours": "Вашият ",
+                "expiresIn": " план изтича на",
+                "expiredIn": " план е изтекъл на ",
+                "possibleExtensions": ". Можете да го удължите с една от опциите отдолу."
+            },
+            "redirectMessage": "След секунди ще бъдете пренасочени към сайта Paysera.com, за да извършите плащането. Ако това не стане автоматично, кликнете ",
+            "hereLabel": "тук",
+            "submit": "Плащане",
+            "result": {
+                "success": {
+                    "title": "Успешно плащане!",
+                    "message": "Плащането на поръчка #{{orderId}} беше успешно. Щом получим потвърждение от банката за вашето плащане, абонаментният ви план ще бъде обновен."
+                },
+                "cancel": {
+                    "title": "Отказано плащане!",
+                    "message": "Плащането беше отказано. Моля опитайте отново или се свържете с нас."
+                }
+            }
+        },
         "profile": {
             "title": "Потребителски профил",
+            "generalInfo": {
+                "title": "Потребителски данни",
+                "successMessage":"Данните са променени успешно"
+            },
             "changePassword": {
                 "title": "Смяна на парола",
                 "oldPassword": "Сегашна парола",
@@ -649,39 +757,6 @@
                 "repeatPasswordRequired": "Полето Повтори не може да бъде празно",
                 "repeatIncorrect": "Моля, повторете паролата точно!",
                 "changeFailed": "Неуспешна промяна на парола"
-              },
-            "subscriptions": {
-                "title": "Абонаменти",
-                "subscriptions": "Активни абонаменти",
-                "columns": {
-                    "name": "Име",
-                    "activeDate": "Активен до",
-                    "amount": "Сума"
-                },
-                "pay": "Плати"
-            },
-            "paymentMethods": {
-                "title": "Методи за плащане",
-                "creditCards": "Банкови карти",
-                "new": "нова карта",
-                "columns": {
-                    "number": "Номер на картата",
-                    "holder": "Име на картодържателя",
-                    "expiryDate": "Валидна до"
-                },
-                "newCard": {
-                    "title": "Добавяне на карта",
-                    "number": "Номер на картата",
-                    "cardNumberRequired": "Полето Номер на картата е задължително",
-                    "invalidCardNumber": "Невалиден номер на картата",
-                    "holder": "Име на картодържателя",
-                    "holderRequired": "Полето Име на картодържателя е задължително",
-                    "expiryDate": "Валидна до",
-                    "expiryDatePlaceholder": "MM/YY",
-                    "expiryDateRequired": "Полето Валидна до е задължително",
-                    "add": "Добави",
-                    "cancel": "Отказ"
-                }
             }
         }
     }

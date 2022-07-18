@@ -7,7 +7,7 @@
 	"invoice": {
 		"id": 3122,
 		"number": "16",
-		"type": "invoice",
+		"type": "nota",
 		"date": "2021-10-20T23:23:31.000000Z",
 		"deadline": null,
 		"issuedDate": "2021-10-20T23:23:31.000000Z",
