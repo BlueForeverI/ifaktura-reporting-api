@@ -13,15 +13,17 @@
     }
   },
   "allowLocalFilesAccess": true,
-  "reportTimeout": 60000,
+  "reportTimeout": 90000,
   "templatingEngines": {
-    "strategy": "http-server"
+    "strategy": "http-server",
+    "timeout": 90000
   },
   "extensions": {
     "chrome-pdf": {  
-	  "launchOptions": {  
-	    "args": ["--no-sandbox"]  
-	  } 
+      "launchOptions": {  
+        "args": ["--no-sandbox"]  
+      },
+      "timeout": 90000
     },
     "authentication": {
       "cookieSession": {},
@@ -32,7 +34,11 @@
       "enabled": false
     },
     "scripts": {
-      "strategy": "http-server"
-    }
+      "strategy": "http-server",
+      "timeout": 90000
+    },
+    "express": {
+      "renderTimeout": 90000
+   }
   }
 }
