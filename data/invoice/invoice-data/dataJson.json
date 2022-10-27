@@ -21,8 +21,8 @@
 		"client": {
 			"name": "Голдхърст Риъл Естейт ЕООД",
 			"bulstat": "175168408",
-			"hasVatNumber": true,
-			"vatNumber": "BG175168408",
+			"hasVatNumber": false,
+			"vatNumber": null,
 			"hasTranslation": true,
 			"city": "София",
 			"address": "ул. „Богдан“ № 15, ет.2, ап.4",

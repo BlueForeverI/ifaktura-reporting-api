@@ -117,10 +117,12 @@
                             <span class="template-bold-">{{ deepFind @root.$localizedResource 'app.invoices.preview.bulstat' }}</span>&nbsp;
                             <span>{{@root.invoice.client.bulstat}}</span>
                         </p>
+                        {{#if @root.invoice.client.hasVatNumber }}
                         <p>
                             <span class="template-bold-">{{ deepFind @root.$localizedResource 'app.invoices.preview.vatNumber' }}</span>&nbsp;
                             <span>{{@root.invoice.client.vatNumber}}</span>
                         </p>
+                        {{/if}}
                         <p>
                             <span>{{tern @root.options.shouldTranslate true @root.invoice.client.cityEn @root.invoice.client.city}}
                             , {{tern @root.options.shouldTranslate true @root.invoice.client.addressEn @root.invoice.client.address}}</span>
@@ -140,10 +142,12 @@
                             <span class="template-bold-">{{ deepFind @root.$localizedResource 'app.invoices.preview.bulstat' }}</span>&nbsp;
                             <span>{{@root.invoice.company.bulstat}}</span>
                         </p>
+                        {{#if @root.invoice.company.hasVatNumber }}
                         <p>
                             <span class="template-bold-">{{ deepFind @root.$localizedResource 'app.invoices.preview.vatNumber' }}</span>&nbsp;
                             <span>{{@root.invoice.company.vatNumber}}</span>
                         </p>
+                        {{/if}}
                         <p>
                             <span>{{tern @root.options.shouldTranslate true @root.invoice.company.addressEn @root.invoice.company.address}}</span>
                         </p>
