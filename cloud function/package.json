@@ -1,9 +1,0 @@
-{
-  "name": "sample-http",
-  "version": "0.0.1",
-  "dependencies": {
-    "adm-zip": "^0.5.9",
-    "node-fetch": "^2.6.7",
-    "zlib": "^1.0.5"
-  }
-}
