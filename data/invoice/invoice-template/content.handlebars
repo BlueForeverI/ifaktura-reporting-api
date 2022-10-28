@@ -62,6 +62,16 @@
 		  {{/each}}
         </tbody>
       </table>
+
+    {{#if invoice.terms}}
+      <div class="template-section" *ngIf="invoice.terms">
+          <h4 class="template-section-header" style="font-weight: bold;margin-top: 20px;">
+            {{ deepFind $localizedResource 'app.invoices.new.terms' }}
+          </h4>
+          <div class="terms-content">{{{ invoice.terms }}}</div>
+      </div>
+    {{/if}}
+
       <div class="template-summary-data">
         <div class="template-left-column">
           <div class="template-extra-data-row">
@@ -185,14 +195,14 @@
       <div class="template-signatures-container">
         <div class="template-left-column">
           <div style="padding-right: 20px;">
-            <span>{{ deepFind $localizedResource 'app.invoices.preview.recipient' }}</span>:
+            <span>{{ deepFind $localizedResource (tern invoice.type 'contract' 'app.invoices.preview.client' 'app.invoices.preview.recipient') }}</span>:
             <span class="template-signature"></span>
             <span class="template-bold">{{invoice.recipient}}</span>
           </div>
         </div>
         <div class="template-right-column" style="text-align: left;">
           <div style="padding-left: 20px;">
-            <span>{{ deepFind $localizedResource 'app.invoices.preview.author' }}</span>:
+            <span>{{ deepFind $localizedResource (tern invoice.type 'contract' 'app.invoices.preview.supplier' 'app.invoices.preview.author') }}</span>:
             <span class="template-signature"></span>
             <span class="template-bold">{{invoice.author}}</span>
           </div>

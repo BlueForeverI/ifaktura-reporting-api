@@ -290,3 +290,7 @@ div.template-invoice-data {
     page-break-after: always;
     page-break-inside: avoid;
 }
+
+.terms-content ul {
+    margin-left: 20px;
+}
