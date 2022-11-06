@@ -396,7 +396,8 @@
                 "taxInvoice": "Invoice",
                 "offer": "Offer",
                 "protocol": "Protocol",
-                "nota": "Debit nota"
+                "nota": "Debit nota",
+                "contract": "Contract"
             },
             "status": {
                 "pending": "Pending",
@@ -475,6 +476,8 @@
                 },
                 "noProductsMessage": "No products selected",
                 "notes": "Notes",
+                "terms": "Trade Terms",
+                "supplier": "Supplier",
                 "value": "Value",
                 "discount": "Discount",
                 "taxBase": "Tax Base",
