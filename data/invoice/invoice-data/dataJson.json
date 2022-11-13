@@ -1,82 +1,176 @@
 {
-	"options": {
-		"shouldTranslate": false,
-		"stamp": "original",
-		"language": "bg"
-	},
-	"invoice": {
-		"id": 6606,
-		"number": "contract-1",
-		"type": "invoice",
-		"date": "2022-10-17T00:00:00.000000Z",
-		"deadline": null,
-		"issuedDate": "2022-10-24T00:00:00.000000Z",
-		"totalSum": 132.12,
-		"tax": 22.02,
-		"vat": 20,
-		"paymentMethod": "bankTransfer",
-		"recipient": "Мохамад Салим Исам Зафер Касаби",
-		"author": "test",
-		"status": "pending",
-		"client": {
-			"name": "БАЛКАН ПАРТС",
-			"bulstat": "121836811",
-			"hasVatNumber": true,
-			"vatNumber": "BG121836811",
-			"hasTranslation": true,
-			"city": "СОФИЯ",
-			"address": "УЛ. СРЕДНА № 101",
-			"issuer": "Мохамад Салим Исам Зафер Касаби",
-			"nameEn": "BALKAN PARTS",
-			"cityEn": "SOFIA",
-			"addressEn": "SREDNA GORA STR. 101",
-			"issuerEn": "MOHAMAD SALIM ISAM ZAFER KASABI",
-			"notes": null
-		},
-		"bankAccount": null,
-		"currency": {
-			"name": "BGN"
-		},
-		"products": [
-			{
-				"code": "1",
-				"name": "21BG005811018033R0",
-				"price": "110.1000",
-				"quantity": "1.0000",
-				"translation": "21BG005811018033R0",
-				"measure": {
-					"name": "бр.",
-					"alternativeName": "pcs."
+		"invoice": {
+			"id": 3036,
+			"number": "4012",
+			"type": "invoice",
+			"date": "2022-11-12T00:00:00.000000Z",
+			"deadline": null,
+			"issuedDate": "2022-11-12T00:00:00.000000Z",
+			"totalSum": 105.6,
+			"tax": 17.6,
+			"vat": 20,
+			"paymentMethod": "bankTransfer",
+			"recipient": "Ulises Reichel",
+			"author": "Иван Иванов",
+			"status": "pending",
+			"client": {
+				"name": "Shane Miller",
+				"bulstat": "BULSTAT-Shane Miller",
+				"hasVatNumber": false,
+				"vatNumber": null,
+				"hasTranslation": false,
+				"city": "Lake Jackbury",
+				"address": "5439 Reichert Via\nNorth Beatrice, OH 39741",
+				"issuer": "Ulises Reichel",
+				"nameEn": null,
+				"cityEn": null,
+				"addressEn": null,
+				"issuerEn": null,
+				"notes": "test123"
+			},
+			"bankAccount": {
+				"name": "Bank Account #2",
+				"bankName": "Unicredit",
+				"alternativeBankName": "Unicredit",
+				"bicCode": "UNC",
+				"iban": "UNC2334242"
+			},
+			"currency": {
+				"name": "BGN"
+			},
+			"products": [
+				{
+					"code": "test",
+					"name": "test",
+					"price": "0.0000",
+					"quantity": "1.0000",
+					"translation": "test",
+					"measure": {
+						"name": "работни часове",
+						"alternativeName": "hours"
+					}
+				},
+				{
+					"code": "test#8",
+					"name": "test888",
+					"price": "12.0000",
+					"quantity": "1.0000",
+					"translation": "test888",
+					"measure": {
+						"name": "гр.",
+						"alternativeName": "gram"
+					}
+				},
+				{
+					"code": "test",
+					"name": "test",
+					"price": "0.0000",
+					"quantity": "1.0000",
+					"translation": "test",
+					"measure": {
+						"name": "работни часове",
+						"alternativeName": "hours"
+					}
+				},
+				{
+					"code": "test",
+					"name": "test",
+					"price": "0.0000",
+					"quantity": "1.0000",
+					"translation": "test",
+					"measure": {
+						"name": "работни часове",
+						"alternativeName": "hours"
+					}
+				},
+				{
+					"code": "3434343",
+					"name": "TTT",
+					"price": "0.0000",
+					"quantity": "1.0000",
+					"translation": "ttt",
+					"measure": {
+						"name": "бр.",
+						"alternativeName": "pcs."
+					}
+				},
+				{
+					"code": "code#bread",
+					"name": "хляб",
+					"price": "13.0000",
+					"quantity": "1.0000",
+					"translation": "bread",
+					"measure": {
+						"name": "гр.",
+						"alternativeName": "gram"
+					}
+				},
+				{
+					"code": "code#water",
+					"name": "вода",
+					"price": "9.0000",
+					"quantity": "7.0000",
+					"translation": "water",
+					"measure": {
+						"name": "л.",
+						"alternativeName": "liter"
+					}
+				},
+				{
+					"code": "test",
+					"name": "test",
+					"price": "0.0000",
+					"quantity": "12.0000",
+					"translation": "test",
+					"measure": {
+						"name": "работни часове",
+						"alternativeName": "hours"
+					}
+				},
+				{
+					"code": "test",
+					"name": "test",
+					"price": "0.0000",
+					"quantity": "10.0000",
+					"translation": "test",
+					"measure": {
+						"name": "работни часове",
+						"alternativeName": "hours"
+					}
 				}
-			}
-		],
-		"discountType": "percentage",
-		"discount": 0,
-		"notes": null,
-		"noTaxReason": null,
-		"created_at": "2022-10-28T09:47:32.000000Z",
-		"updated_at": "2022-10-28T09:47:32.000000Z",
-		"originalDate": "2022-10-28T00:00:00.000000Z",
-		"originalInSystem": 1,
-		"originalNumber": null,
-		"summary": null,
-		"introduction": null,
-		"company": {
-			"name": "Къстъмс Пойнт ООД",
-			"bulstat": "205883645",
-			"hasVatNumber": true,
-			"vatNumber": "BG205883645",
-			"city": "София",
-			"address": "Държава: БЪЛГАРИЯ\nОбласт: София (столица), Община: Столична\nНаселено място: гр. София, п.к. 1680\nр-н Витоша\nбул./ул. бул. България № 88, вх. 3, ет. 3, офис 16",
-			"issuer": "Кристин Джордж Меджаес",
-			"hasTranslation": true,
-			"logoUrl": "https://i.imgur.com/WWMAKom.png",
-			"showLogoOnInvoices": true,
-			"nameEn": "„Customs Point“ Ltd.",
-			"cityEn": "Sofia",
-			"addressEn": "88 Bulgaria blvd., 3-3-16",
-			"issuerEn": null
+			],
+			"discountType": "percentage",
+			"discount": 0,
+			"notes": null,
+			"noTaxReason": null,
+			"created_at": "2022-11-12T11:26:55.000000Z",
+			"updated_at": "2022-11-12T11:26:55.000000Z",
+			"originalDate": "2022-11-12T00:00:00.000000Z",
+			"originalInSystem": 1,
+			"originalNumber": null,
+			"summary": null,
+			"introduction": null,
+			"company": {
+				"name": "Моята Фирма ООД",
+				"bulstat": "321321123",
+				"hasVatNumber": true,
+				"vatNumber": "BG321321124",
+				"city": "South Jennyfer",
+				"address": "Държава: БЪЛГАРИЯ Област: София (столица), Община: Столична Населено място: гр. София, п.к. 1680 р-н Витоша бул./ул. България № 88, вх. 3, ет. 3, офис 16",
+				"issuer": "Garrick Bins DDS",
+				"hasTranslation": false,
+				"logoUrl": "https://i.imgur.com/J9t6FxL.png",
+				"showLogoOnInvoices": false,
+				"nameEn": null,
+				"cityEn": null,
+				"addressEn": null,
+				"issuerEn": null
+			},
+			"terms": null
 		},
-		"terms": "Hello,<div><br></div><div>These are the contract terms:</div><div><ul><li>end date: 2023</li><li>Price: 20</li></ul></div>"
+		"options": {
+			"shouldTranslate": false,
+			"stamp": "none",
+			"language": "bg"
+		}
 	}
-}

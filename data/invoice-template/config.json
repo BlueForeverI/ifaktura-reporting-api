@@ -17,7 +17,7 @@
         "$$date": 1612813336724
     },
     "modificationDate": {
-        "$$date": 1666962990656
+        "$$date": 1668253180959
     },
     "_id": "V9nLh7J1qmpgYWck",
     "$entitySet": "templates",
@@ -49,14 +49,5 @@
     "phantom": {
         "fitToPage": true
     },
-    "pdfOperations": [
-        {
-            "type": "merge",
-            "templateShortid": "T-xDl4BU3H",
-            "mergeWholeDocument": true,
-            "renderForEveryPage": false,
-            "mergeToFront": true,
-            "enabled": true
-        }
-    ]
+    "pdfOperations": []
 }

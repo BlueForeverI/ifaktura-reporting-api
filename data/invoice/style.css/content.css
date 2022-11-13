@@ -1,4 +1,8 @@
 
+@page {
+    margin-top: 20px;
+}
+
 body {
     margin: 0;
 }
@@ -261,7 +265,7 @@ table.template-objects-table tbody tr:nth-child(odd) {
 
 .template .template-summary-data {
    padding-bottom: 10px;
-   padding-top: 40px;
+   padding-top: 20px;
    page-break-inside: avoid;
 } 
 .template .template-left-column p {
