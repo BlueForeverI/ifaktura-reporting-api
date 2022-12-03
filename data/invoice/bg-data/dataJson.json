@@ -6,6 +6,7 @@
                 "dashboard": "Начало",
                 "invoices": "Фактури",
                 "documents": "Документи",
+                "expenses": "Разходи",
                 "otherDocuments": "Други документи",
                 "clients": "Клиенти",
                 "products": "Продукти"
@@ -18,7 +19,8 @@
                 "exit": "Изход"
             },
             "settingsMenu": {
-                "language": "Език"
+                "language": "Език",
+                "companySettings": "Настройки на фирмата"
             },
             "companyInactiveMessage": "Избраната фирма е неактивна. Можете да подновите абонамента от ",
             "updateSubscriptionLink": "тук"
@@ -361,6 +363,7 @@
         "invoices": {
             "title": "Управление на фактури",
             "documentsTitle": "Управление на документи",
+            "expensesTitle": "Управление на разходи",
             "search": "Търси",
             "noDataMessage": "Няма намерени резултати",
             "detailedSearch": "подробно търсене",
@@ -412,7 +415,9 @@
                 "protocol": "Протокол",
                 "nota": "Дебит нота",
                 "contract": "Договор",
-                "expense": "Разходна фактура"
+                "expense": "Разходна фактура",
+                "debitOrder": "Разходен касов ордер",
+                "creditOrder": "Приходен касов ордер"
             },
             "status": {
                 "all": "Всички",
