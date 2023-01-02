@@ -1,338 +1,407 @@
 <html>
-    <head>
-        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <style>
-          @font-face {
-            font-family: "Noto Sans";
-            font-style: normal;
-            font-weight: normal;
-            src: url({#asset NotoSans-Regular.ttf @encoding=dataURI}) format('truetype');
-          }
-          @font-face {
-            font-family: "Noto Sans Bold";
-            font-style: normal;
-            font-weight: normal;
-            src: url({#asset NotoSans-Bold.ttf @encoding=dataURI}) format('truetype');
-          }
-        </style>
-        <style>
-            {#asset style.css @encoding=utf8}
-        </style> 
-    </head>
-    <body>
-<div>
-  <div class="template-wrapper">
-    <div class="template" style="margin-top: -20px">
-<div>
-            <div class="invoice-template-container">
-            <div class="template-header">
-                <div class="template-invoice-data templat-eof-visible">
-                    <div class="template-logo">
-                        {{#if (equals @root.options.language 'bg')}}
-                        {{#if (equals @root.options.stamp 'original')}}
-                            <img class="template-stamp" src="{#asset stamp-original.png @encoding=dataURI}" />
-                            <div class="template-stamp template-stamp-original"></div>
-                        {{/if}}
-                        {{#if (equals @root.options.stamp 'copy')}}
-                            <img class="template-stamp" src="{#asset stamp-copy.png @encoding=dataURI}" />
-                            <div class="template-stamp template-stamp-original"></div>
-                        {{/if}}
-                        {{/if}}
-                        {{#if (equals @root.options.language 'en')}}
-                        {{#if (equals @root.options.stamp 'original')}}
-                            <img class="template-stamp" src="{#asset stamp-original_en.png @encoding=dataURI}" />
-                            <div class="template-stamp template-stamp-original"></div>
-                        {{/if}}
-                        {{#if (equals @root.options.stamp 'copy')}}
-                            <img class="template-stamp" src="{#asset stamp-copy_en.png @encoding=dataURI}" />
-                            <div class="template-stamp template-stamp-original"></div>
-                        {{/if}}
-                        {{/if}}
-                        {{#unless @root.invoice.company.showLogoOnInvoices}}
-                        {{#if (equals @root.options.language 'bg')}}
-                            <div class="template-logo-text">{{ @root.invoice.company.name }}</div>
-                        {{/if}}
-                        {{#if (equals @root.options.language 'en')}}
-                            <div class="template-logo-text">{{ @root.invoice.company.nameEn }}</div>
-                        {{/if}}
+   <head>
+      <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+      <style>
+         @font-face {
+         font-family: "Noto Sans";
+         font-style: normal;
+         font-weight: normal;
+         src: url({#asset NotoSans-Regular.ttf @encoding=dataURI}) format('truetype');
+         }
+         @font-face {
+         font-family: "Noto Sans Bold";
+         font-style: normal;
+         font-weight: normal;
+         src: url({#asset NotoSans-Bold.ttf @encoding=dataURI}) format('truetype');
+         }
+      </style>
+      <style>
+         {#asset style.css @encoding=utf8}
+      </style>
+   </head>
+   <body>
+      <div>
+         <div class="template-wrapper">
+            <div class="template" style="margin-top: -20px">
+               <div>
+                  <div class="invoice-template-container">
+                     <div class="template-header">
+                        <div class="template-invoice-data templat-eof-visible">
+                           <div class="template-logo">
+                              {{#if (equals @root.options.language 'bg')}}
+                              {{#if (equals @root.options.stamp 'original')}}
+                              <img class="template-stamp" src="{#asset stamp-original.png @encoding=dataURI}" />
+                              <div class="template-stamp template-stamp-original"></div>
+                              {{/if}}
+                              {{#if (equals @root.options.stamp 'copy')}}
+                              <img class="template-stamp" src="{#asset stamp-copy.png @encoding=dataURI}" />
+                              <div class="template-stamp template-stamp-original"></div>
+                              {{/if}}
+                              {{/if}}
+                              {{#if (equals @root.options.language 'en')}}
+                              {{#if (equals @root.options.stamp 'original')}}
+                              <img class="template-stamp" src="{#asset stamp-original_en.png @encoding=dataURI}" />
+                              <div class="template-stamp template-stamp-original"></div>
+                              {{/if}}
+                              {{#if (equals @root.options.stamp 'copy')}}
+                              <img class="template-stamp" src="{#asset stamp-copy_en.png @encoding=dataURI}" />
+                              <div class="template-stamp template-stamp-original"></div>
+                              {{/if}}
+                              {{/if}}
+                              {{#unless @root.invoice.company.showLogoOnInvoices}}
+                              {{#if (equals @root.options.language 'bg')}}
+                              <div class="template-logo-text">{{ @root.invoice.company.name }}</div>
+                              {{/if}}
+                              {{#if (equals @root.options.language 'en')}}
+                              <div class="template-logo-text">{{ @root.invoice.company.nameEn }}</div>
+                              {{/if}}
+                              {{/unless}}
+                              {{#if @root.invoice.company.showLogoOnInvoices}}
+                              <img src="{{@root.invoice.company.logoUrl}}"/>
+                              {{/if}}
+                           </div>
+                           <div class="template-right-column templat-eof-visible">
+                              <h2> {{ deepFind @root.$localizedResource (concat 'app.invoices.type.' @root.invoice.type) }}</h2>
+                              <p>
+                                 <span class="template-number">№ {{ invoiceNumber @root.invoice.number }}</span>
+                              </p>
+                              {{#if @root.invoice.originalNumber}}
+                              <p>
+                                 <span>{{ deepFind @root.$localizedResource 'app.invoices.preview.forInvoice' }}</span>:
+                                 <span class="template-date">{{ invoiceNumber @root.invoice.originalNumber }}</span>
+                              </p>
+                              {{/if}}
+                              {{#if @root.invoice.originalNumber}}
+                              <p>
+                                 <span>{{ deepFind @root.$localizedResource 'app.invoices.preview.fromDate' }}</span>:
+                                 <span class="template-date">{{ dateFormat @root.invoice.originalDate }}</span>
+                              </p>
+                              {{/if}}
+                              <p>
+                                 <span>{{ deepFind @root.$localizedResource 'app.invoices.preview.issuedDate' }}</span>:
+                                 <span class="template-date">{{ dateFormat @root.invoice.issuedDate }}</span>
+                              </p>
+                              <p>
+                                 <span>{{ deepFind @root.$localizedResource 'app.invoices.preview.eventDate' }}</span>:
+                                 <span class="template-date">{{ dateFormat @root.invoice.date }}</span>
+                              </p>
+                              {{#if @root.invoice.deadline}}
+                              <p>
+                                 <span>{{ deepFind @root.$localizedResource 'app.invoices.preview.deadline' }}</span>:
+                                 <span class="template-date">{{ dateFormat @root.invoice.deadline }}</span>
+                              </p>
+                              {{/if}}
+                           </div>
+                           <br class="clearboth">
+                        </div>
+                        {{#unless (isExpense invoice)}}
+                        <div class="template-section">
+                           <div class="template-left-column template-text-left template-target">
+                              {{#if (isOrder invoice)}}
+                              <h4 class="template-section-header">{{ deepFind @root.$localizedResource 'app.invoices.preview.orderRecipient' }}</h4>
+                              {{/if}}
+                              {{#unless (isOrder invoice)}}
+                              <h4 class="template-section-header">{{ deepFind @root.$localizedResource 'app.invoices.preview.recipient' }}</h4>
+                              {{/unless}}
+                              <p class="template-highlight">
+                                 {{ tern @root.options.shouldTranslate true @root.invoice.client.nameEn @root.invoice.client.name }}
+                              </p>
+                              <p>
+                                 <span class="template-bold-">{{ deepFind @root.$localizedResource 'app.invoices.preview.issuer' }}</span>&nbsp;
+                                 <span>
+                                 {{ tern @root.options.shouldTranslate true @root.invoice.client.issuerEn @root.invoice.client.issuer }}
+                                 </span>
+                              </p>
+                              <p>
+                                 <span class="template-bold-">{{ deepFind @root.$localizedResource 'app.invoices.preview.bulstat' }}</span>&nbsp;
+                                 <span>{{@root.invoice.client.bulstat}}</span>
+                              </p>
+                              {{#if @root.invoice.client.hasVatNumber }}
+                              <p>
+                                 <span class="template-bold-">{{ deepFind @root.$localizedResource 'app.invoices.preview.vatNumber' }}</span>&nbsp;
+                                 <span>{{@root.invoice.client.vatNumber}}</span>
+                              </p>
+                              {{/if}}
+                              <p>
+                                 <span>{{tern @root.options.shouldTranslate true @root.invoice.client.cityEn @root.invoice.client.city}}
+                                 , {{tern @root.options.shouldTranslate true @root.invoice.client.addressEn @root.invoice.client.address}}</span>
+                              </p>
+                           </div>
+                           <div class="template-right-column template-text-left template-target">
+                             {{#if (isOrder invoice)}}
+                              <h4 class="template-section-header">{{ deepFind @root.$localizedResource 'app.invoices.preview.orderIssuer' }}</h4>
+                              {{/if}}
+                              {{#unless (isOrder invoice)}}
+                              <h4 class="template-section-header">{{ deepFind @root.$localizedResource 'app.invoices.preview.supplier' }}</h4>
+                              {{/unless}}
+                              <p class="template-highlight">
+                                 {{tern @root.options.shouldTranslate true @root.invoice.company.nameEn @root.invoice.company.name}}
+                              </p>
+                              <p>
+                                 <span class="template-bold-">{{ deepFind @root.$localizedResource 'app.invoices.preview.issuer' }}</span>&nbsp;
+                                 <span>{{tern @root.options.shouldTranslate true @root.invoice.company.issuerEn @root.invoice.company.issuer}}</span>
+                              </p>
+                              <p>
+                                 <span class="template-bold-">{{ deepFind @root.$localizedResource 'app.invoices.preview.bulstat' }}</span>&nbsp;
+                                 <span>{{@root.invoice.company.bulstat}}</span>
+                              </p>
+                              {{#if @root.invoice.company.hasVatNumber }}
+                              <p>
+                                 <span class="template-bold-">{{ deepFind @root.$localizedResource 'app.invoices.preview.vatNumber' }}</span>&nbsp;
+                                 <span>{{@root.invoice.company.vatNumber}}</span>
+                              </p>
+                              {{/if}}
+                              <p>
+                                 <span>{{tern @root.options.shouldTranslate true @root.invoice.company.addressEn @root.invoice.company.address}}</span>
+                              </p>
+                           </div>
+                           <br class="clearboth">
+                        </div>
                         {{/unless}}
-                        {{#if @root.invoice.company.showLogoOnInvoices}}
-                        <img src="{{@root.invoice.company.logoUrl}}"/>
-                        {{/if}}
-                    </div>
-                    <div class="template-right-column templat-eof-visible">
-                        <h2> {{ deepFind @root.$localizedResource (concat 'app.invoices.type.' @root.invoice.type) }}</h2>
-                        <p>
-                        <span class="template-number">№ {{ invoiceNumber @root.invoice.number }}</span>
-                        </p>
-                        {{#if @root.invoice.originalNumber}}
-                        <p>
-                        <span>{{ deepFind @root.$localizedResource 'app.invoices.preview.forInvoice' }}</span>:
-                        <span class="template-date">{{ invoiceNumber @root.invoice.originalNumber }}</span>
-                        </p>
-                        {{/if}}
-                        {{#if @root.invoice.originalNumber}}
-                        <p>
-                        <span>{{ deepFind @root.$localizedResource 'app.invoices.preview.fromDate' }}</span>:
-                        <span class="template-date">{{ dateFormat @root.invoice.originalDate }}</span>
-                        </p>
-                        {{/if}}
-                        <p>
-                        <span>{{ deepFind @root.$localizedResource 'app.invoices.preview.issuedDate' }}</span>:
-                        <span class="template-date">{{ dateFormat @root.invoice.issuedDate }}</span>
-                        </p>
-                        <p>
-                        <span>{{ deepFind @root.$localizedResource 'app.invoices.preview.eventDate' }}</span>:
-                        <span class="template-date">{{ dateFormat @root.invoice.date }}</span>
-                        </p>
-                        {{#if @root.invoice.deadline}}
-                        <p>
-                        <span>{{ deepFind @root.$localizedResource 'app.invoices.preview.deadline' }}</span>:
-                        <span class="template-date">{{ dateFormat @root.invoice.deadline }}</span>
-                        </p>
-                        {{/if}}
-                    </div>
-                    <br class="clearboth">
-                    </div>
-
-                    <div class="template-section">
-                        <div class="template-left-column template-text-left template-target">
-                        <h4 class="template-section-header">{{ deepFind @root.$localizedResource 'app.invoices.preview.recipient' }}</h4>
-                        <p class="template-highlight">
-                            {{ tern @root.options.shouldTranslate true @root.invoice.client.nameEn @root.invoice.client.name }}
-                        </p>
-                        <p>
-                            <span class="template-bold-">{{ deepFind @root.$localizedResource 'app.invoices.preview.issuer' }}</span>&nbsp;
-                            <span>
-                            {{ tern @root.options.shouldTranslate true @root.invoice.client.issuerEn @root.invoice.client.issuer }}
-                            </span>
-                        </p>
-                        <p>
-                            <span class="template-bold-">{{ deepFind @root.$localizedResource 'app.invoices.preview.bulstat' }}</span>&nbsp;
-                            <span>{{@root.invoice.client.bulstat}}</span>
-                        </p>
-                        {{#if @root.invoice.client.hasVatNumber }}
-                        <p>
-                            <span class="template-bold-">{{ deepFind @root.$localizedResource 'app.invoices.preview.vatNumber' }}</span>&nbsp;
-                            <span>{{@root.invoice.client.vatNumber}}</span>
-                        </p>
-                        {{/if}}
-                        <p>
-                            <span>{{tern @root.options.shouldTranslate true @root.invoice.client.cityEn @root.invoice.client.city}}
-                            , {{tern @root.options.shouldTranslate true @root.invoice.client.addressEn @root.invoice.client.address}}</span>
-                        </p>
+                        {{#if (isExpense invoice)}}
+                        <div class="template-section">
+                           <div class="template-right-column template-text-left template-target">
+                              {{#if (isOrder invoice)}}
+                              <h4 class="template-section-header">{{ deepFind @root.$localizedResource 'app.invoices.preview.orderIssuer' }}</h4>
+                              {{/if}}
+                              {{#unless (isOrder invoice)}}
+                              <h4 class="template-section-header">{{ deepFind @root.$localizedResource 'app.invoices.preview.supplier' }}</h4>
+                              {{/unless}}
+                              <p class="template-highlight">
+                                 {{ tern @root.options.shouldTranslate true @root.invoice.client.nameEn @root.invoice.client.name }}
+                              </p>
+                              <p>
+                                 <span class="template-bold-">{{ deepFind @root.$localizedResource 'app.invoices.preview.issuer' }}</span>&nbsp;
+                                 <span>
+                                 {{ tern @root.options.shouldTranslate true @root.invoice.client.issuerEn @root.invoice.client.issuer }}
+                                 </span>
+                              </p>
+                              <p>
+                                 <span class="template-bold-">{{ deepFind @root.$localizedResource 'app.invoices.preview.bulstat' }}</span>&nbsp;
+                                 <span>{{@root.invoice.client.bulstat}}</span>
+                              </p>
+                              {{#if @root.invoice.client.hasVatNumber }}
+                              <p>
+                                 <span class="template-bold-">{{ deepFind @root.$localizedResource 'app.invoices.preview.vatNumber' }}</span>&nbsp;
+                                 <span>{{@root.invoice.client.vatNumber}}</span>
+                              </p>
+                              {{/if}}
+                              <p>
+                                 <span>{{tern @root.options.shouldTranslate true @root.invoice.client.cityEn @root.invoice.client.city}}
+                                 , {{tern @root.options.shouldTranslate true @root.invoice.client.addressEn @root.invoice.client.address}}</span>
+                              </p>
+                           </div>
+                           <div class="template-left-column template-text-left template-target">
+                              {{#if (isOrder invoice)}}
+                              <h4 class="template-section-header">{{ deepFind @root.$localizedResource 'app.invoices.preview.orderRecipient' }}</h4>
+                              {{/if}}
+                              {{#unless (isOrder invoice)}}
+                              <h4 class="template-section-header">{{ deepFind @root.$localizedResource 'app.invoices.preview.recipient' }}</h4>
+                              {{/unless}}
+                              <p class="template-highlight">
+                                 {{tern @root.options.shouldTranslate true @root.invoice.company.nameEn @root.invoice.company.name}}
+                              </p>
+                              <p>
+                                 <span class="template-bold-">{{ deepFind @root.$localizedResource 'app.invoices.preview.issuer' }}</span>&nbsp;
+                                 <span>{{tern @root.options.shouldTranslate true @root.invoice.company.issuerEn @root.invoice.company.issuer}}</span>
+                              </p>
+                              <p>
+                                 <span class="template-bold-">{{ deepFind @root.$localizedResource 'app.invoices.preview.bulstat' }}</span>&nbsp;
+                                 <span>{{@root.invoice.company.bulstat}}</span>
+                              </p>
+                              {{#if @root.invoice.company.hasVatNumber }}
+                              <p>
+                                 <span class="template-bold-">{{ deepFind @root.$localizedResource 'app.invoices.preview.vatNumber' }}</span>&nbsp;
+                                 <span>{{@root.invoice.company.vatNumber}}</span>
+                              </p>
+                              {{/if}}
+                              <p>
+                                 <span>{{tern @root.options.shouldTranslate true @root.invoice.company.addressEn @root.invoice.company.address}}</span>
+                              </p>
+                           </div>
+                           <br class="clearboth">
                         </div>
-
-                        <div class="template-right-column template-text-left template-target">
-                        <h4 class="template-section-header">{{ deepFind @root.$localizedResource 'app.invoices.preview.supplier' }}</h4>
-                        <p class="template-highlight">
-                            {{tern @root.options.shouldTranslate true @root.invoice.company.nameEn @root.invoice.company.name}}
-                        </p>
-                        <p>
-                            <span class="template-bold-">{{ deepFind @root.$localizedResource 'app.invoices.preview.issuer' }}</span>&nbsp;
-                            <span>{{tern @root.options.shouldTranslate true @root.invoice.company.issuerEn @root.invoice.company.issuer}}</span>
-                        </p>
-                        <p>
-                            <span class="template-bold-">{{ deepFind @root.$localizedResource 'app.invoices.preview.bulstat' }}</span>&nbsp;
-                            <span>{{@root.invoice.company.bulstat}}</span>
-                        </p>
-                        {{#if @root.invoice.company.hasVatNumber }}
-                        <p>
-                            <span class="template-bold-">{{ deepFind @root.$localizedResource 'app.invoices.preview.vatNumber' }}</span>&nbsp;
-                            <span>{{@root.invoice.company.vatNumber}}</span>
-                        </p>
                         {{/if}}
+                     </div>
+                  </div>
+               </div>
+               {{#if invoice.introduction}}
+               <div class="template-section">
+                  <p>{{ invoice.introduction }}</p>
+               </div>
+               {{/if}}
+               <table class="template-objects-table" maxsize="661">
+                  <thead>
+                     <tr>
+                        <th>
+                           {{ deepFind $localizedResource 'app.invoices.preview.product.name' }}
+                        </th>
+                        <th style="text-align:center">
+                           {{ deepFind $localizedResource 'app.invoices.preview.product.measure' }}
+                        </th>
+                        <th style="text-align:center">
+                           {{ deepFind $localizedResource 'app.invoices.preview.product.quantity' }}
+                        </th>
+                        <th style="text-align:right">
+                           {{ deepFind $localizedResource 'app.invoices.preview.product.price' }}
+                        </th>
+                        <th style="text-align:right">
+                           {{ deepFind $localizedResource 'app.invoices.preview.product.value' }}
+                        </th>
+                     </tr>
+                  </thead>
+                  <tbody>
+                     {{#each invoice.products}}
+                     <tr class="template-entry">
+                        <td style="width:300px;">{{ tern @root.options.shouldTranslate true translation name}}</td>
+                        <td style="width:80px; text-align:center;">{{tern @root.options.shouldTranslate true measure.alternativeName measure.name}}</td>
+                        <td style="width:80px; text-align:center;">{{fixedNum quantity}}</td>
+                        <td style="text-align: right;">{{formatNumber price}} {{@root.invoice.currency.name}}</td>
+                        <td style="text-align: right;">{{formatNumber (mult price quantity)}} {{@root.invoice.currency.name}}</td>
+                     </tr>
+                     {{/each}}
+                  </tbody>
+               </table>
+               {{#if invoice.terms}}
+               <div class="template-section" *ngIf="invoice.terms">
+                  <h4 class="template-section-header" style="font-weight: bold;margin-top: 20px;">
+                     {{ deepFind $localizedResource 'app.invoices.new.terms' }}
+                  </h4>
+                  <div class="terms-content">{{{ invoice.terms }}}</div>
+               </div>
+               {{/if}}
+               <div class="template-summary-data">
+                  <div class="template-left-column">
+                     <div class="template-extra-data-row">
                         <p>
-                            <span>{{tern @root.options.shouldTranslate true @root.invoice.company.addressEn @root.invoice.company.address}}</span>
+                           <span>{{ deepFind $localizedResource 'app.invoices.preview.valueText' }}</span>:
                         </p>
-
+                        <p class="template-bold">
+                           {{#each (numberToWords (fixedNum invoice.totalSum) invoice options)}} 
+                           {{ deepFind @root.$localizedResource this }}
+                           {{/each}}
+                        </p>
+                     </div>
+                     {{#if (and (equals invoice.vat 0) invoice.noTaxReason) }}
+                     <div class="template-extra-data-row">
+                        <p>
+                           {{ deepFind $localizedResource 'app.invoices.preview.noVatReason' }}:
+                        </p>
+                        <p class="template-bold">
+                           {{invoice.noTaxReason.name}} 
+                        </p>
+                     </div>
+                     {{/if}}
+                     <div class="template-extra-data-row">
+                        <p>
+                           <span>{{ deepFind $localizedResource 'app.invoices.preview.paymentMethod' }}</span>:
+                           <span class="template-bold">
+                           {{ deepFind $localizedResource (concat 'app.invoices.paymentMethod.' invoice.paymentMethod) }}
+                           </span>
+                        </p>
+                        {{#if (and (isBankTransfer invoice) invoice.bankAccount)}}
+                        <div>
+                           <p>
+                              <span>{{ deepFind $localizedResource 'app.invoices.preview.bankAccount.name' }}</span>:
+                              <span class="template-bold">{{tern @root.options.shouldTranslate true invoice.bankAccount.alternativeBankName invoice.bankAccount.bankName}}</span>
+                           </p>
+                           <p>
+                              <span>{{ deepFind $localizedResource 'app.invoices.preview.bankAccount.iban' }}</span>:
+                              <span class="template-bold">{{invoice.bankAccount.iban}}</span>
+                           </p>
+                           <p>
+                              <span>{{ deepFind $localizedResource 'app.invoices.preview.bankAccount.bic' }}</span>:
+                              <span class="template-bold">{{invoice.bankAccount.bicCode}}</span>
+                           </p>
                         </div>
-                        <br class="clearboth">
-                    </div>
-                </div>
+                        {{/if}}
+                     </div>
+                  </div>
+                  <div class="template-right-column" style="width:250px">
+                     <div class="template-extra-data-row">
+                        <div class="template-left-column">
+                           <span>{{ deepFind $localizedResource 'app.invoices.preview.invoiceValue' }}</span>:
+                        </div>
+                        <div class="template-right template-bold">
+                           {{formatNumber (invoiceValue invoice)}} {{invoice.currency.name}}
+                        </div>
+                     </div>
+                     <div class="template-extra-data-row">
+                        <div class="template-left-column">
+                           <span>{{ deepFind $localizedResource 'app.invoices.preview.discount' }}</span>:
+                        </div>
+                        <div class="template-right template-bold">
+                           {{invoice.discount}} {{tern invoice.discountType 'percentage' '%' invoice.currency.name}} 
+                        </div>
+                     </div>
+                     <div class="template-extra-data-row">
+                        <div class="template-left-column">
+                           <span>{{ deepFind $localizedResource 'app.invoices.preview.taxBase' }}</span>:
+                        </div>
+                        <div class="template-right template-bold">
+                           {{formatNumber (taxBase invoice)}} {{invoice.currency.name}}
+                        </div>
+                     </div>
+                     <div class="template-extra-data-row">
+                        <div class="template-left-column">
+                           <span>{{ deepFind $localizedResource 'app.invoices.preview.vatPercentage' }}</span>:
+                        </div>
+                        <div class="template-right template-bold">
+                           {{invoice.vat}} %
+                        </div>
+                     </div>
+                     <div class="template-extra-data-row">
+                        <div class="template-left-column">
+                           <span>{{ deepFind $localizedResource 'app.invoices.preview.vatValue' }}</span>:
+                        </div>
+                        <div class="template-right template-bold">
+                           {{formatNumber invoice.tax}} {{invoice.currency.name}} 
+                        </div>
+                     </div>
+                     <div class="template-divider">&nbsp;</div>
+                     <div class="template-extra-data-row">
+                        <div class="template-left-column">
+                           <span style="line-height: 30px;">{{ deepFind $localizedResource 'app.invoices.preview.total' }}</span>:
+                        </div>
+                        <div class="template-total template-bold">
+                           <span>
+                           {{formatNumber invoice.totalSum}} {{invoice.currency.name}} </span>
+                        </div>
+                     </div>
+                  </div>
+                  <br clear="all">
+               </div>
+               {{#if invoice.notes}}
+               <div class="template-section" *ngIf="invoice.notes">
+                  <h4 class="template-section-header">
+                     {{ deepFind $localizedResource 'app.invoices.new.notes' }}
+                  </h4>
+                  <p>{{ invoice.notes }}</p>
+               </div>
+               {{/if}}
+               {{#if invoice.summary}}
+               <div class="template-section">
+                  <p>{{ invoice.summary }}</p>
+               </div>
+               {{/if}}
+               <div class="template-signatures-container">
+                  <div class="template-left-column">
+                     <div style="padding-right: 20px;">
+                        <span>{{ deepFind $localizedResource (tern invoice.type 'contract' 'app.invoices.preview.client' 'app.invoices.preview.recipient') }}</span>:
+                        <span class="template-signature"></span>
+                        <span class="template-bold">{{invoice.recipient}}</span>
+                     </div>
+                  </div>
+                  <div class="template-right-column" style="text-align: left;">
+                     <div style="padding-left: 20px;">
+                        <span>{{ deepFind $localizedResource (tern invoice.type 'contract' 'app.invoices.preview.supplier' 'app.invoices.preview.author') }}</span>:
+                        <span class="template-signature"></span>
+                        <span class="template-bold">{{invoice.author}}</span>
+                     </div>
+                  </div>
+               </div>
             </div>
-        </div>
-      {{#if invoice.introduction}}
-        <div class="template-section">
-          <p>{{ invoice.introduction }}</p>
-        </div>
-      {{/if}}
-
-      <table class="template-objects-table" maxsize="661">
-        <thead>
-          <tr>
-            <th>
-              {{ deepFind $localizedResource 'app.invoices.preview.product.name' }}</th>
-            <th style="text-align:center">
-              {{ deepFind $localizedResource 'app.invoices.preview.product.measure' }}</th>
-            <th style="text-align:center">
-              {{ deepFind $localizedResource 'app.invoices.preview.product.quantity' }}</th>
-            <th style="text-align:right">
-              {{ deepFind $localizedResource 'app.invoices.preview.product.price' }}</th>
-            <th style="text-align:right">
-              {{ deepFind $localizedResource 'app.invoices.preview.product.value' }}</th>
-          </tr>
-        </thead>
-        <tbody>
-		  {{#each invoice.products}}
-          <tr class="template-entry">
-            <td style="width:300px;">{{ tern @root.options.shouldTranslate true translation name}}</td>
-            <td style="width:80px; text-align:center;">{{tern @root.options.shouldTranslate true measure.alternativeName measure.name}}</td>
-            <td style="width:80px; text-align:center;">{{fixedNum quantity}}</td>
-            <td style="text-align: right;">{{formatNumber price}} {{@root.invoice.currency.name}}</td>
-            <td style="text-align: right;">{{formatNumber (mult price quantity)}} {{@root.invoice.currency.name}}</td>
-          </tr>
-		  {{/each}}
-        </tbody>
-      </table>
-
-    {{#if invoice.terms}}
-      <div class="template-section" *ngIf="invoice.terms">
-          <h4 class="template-section-header" style="font-weight: bold;margin-top: 20px;">
-            {{ deepFind $localizedResource 'app.invoices.new.terms' }}
-          </h4>
-          <div class="terms-content">{{{ invoice.terms }}}</div>
+         </div>
       </div>
-    {{/if}}
-
-      <div class="template-summary-data">
-        <div class="template-left-column">
-          <div class="template-extra-data-row">
-            <p>
-              <span>{{ deepFind $localizedResource 'app.invoices.preview.valueText' }}</span>:
-            </p>
-            <p class="template-bold">
-            {{#each (numberToWords (fixedNum invoice.totalSum) invoice options)}} 
-                {{ deepFind @root.$localizedResource this }}
-            {{/each}}
-            </p>
-          </div>
-		  {{#if (and (equals invoice.vat 0) invoice.noTaxReason) }}
-          <div class="template-extra-data-row">
-            <p>
-              {{ deepFind $localizedResource 'app.invoices.preview.noVatReason' }}:
-            </p>
-            <p class="template-bold">
-              {{invoice.noTaxReason.name}} 
-            </p>
-          </div>
-		  {{/if}}
-          <div class="template-extra-data-row">
-            <p>
-              <span>{{ deepFind $localizedResource 'app.invoices.preview.paymentMethod' }}</span>:
-              <span class="template-bold">
-                {{ deepFind $localizedResource (concat 'app.invoices.paymentMethod.' invoice.paymentMethod) }}
-              </span>
-            </p>
-			{{#if (and (isBankTransfer invoice) invoice.bankAccount)}}
-            <div>
-              <p>
-                <span>{{ deepFind $localizedResource 'app.invoices.preview.bankAccount.name' }}</span>:
-                <span class="template-bold">{{tern @root.options.shouldTranslate true invoice.bankAccount.alternativeBankName invoice.bankAccount.bankName}}</span>
-              </p>
-              <p>
-                <span>{{ deepFind $localizedResource 'app.invoices.preview.bankAccount.iban' }}</span>:
-                <span class="template-bold">{{invoice.bankAccount.iban}}</span>
-              </p>
-              <p>
-                <span>{{ deepFind $localizedResource 'app.invoices.preview.bankAccount.bic' }}</span>:
-                <span class="template-bold">{{invoice.bankAccount.bicCode}}</span>
-              </p>
-            </div>
-			{{/if}}
-          </div>
-
-        </div>
-
-        <div class="template-right-column" style="width:250px">
-          <div class="template-extra-data-row">
-            <div class="template-left-column">
-              <span>{{ deepFind $localizedResource 'app.invoices.preview.invoiceValue' }}</span>:
-            </div>
-            <div class="template-right template-bold">
-              {{formatNumber (invoiceValue invoice)}} {{invoice.currency.name}}
-            </div>
-          </div>
-          <div class="template-extra-data-row">
-            <div class="template-left-column">
-              <span>{{ deepFind $localizedResource 'app.invoices.preview.discount' }}</span>:
-            </div>
-            <div class="template-right template-bold">
-              {{invoice.discount}} {{tern invoice.discountType 'percentage' '%' invoice.currency.name}} 
-            </div>
-          </div>
-
-          <div class="template-extra-data-row">
-            <div class="template-left-column">
-              <span>{{ deepFind $localizedResource 'app.invoices.preview.taxBase' }}</span>:
-            </div>
-            <div class="template-right template-bold">
-              {{formatNumber (taxBase invoice)}} {{invoice.currency.name}}
-            </div>
-          </div>
-          <div class="template-extra-data-row">
-            <div class="template-left-column">
-              <span>{{ deepFind $localizedResource 'app.invoices.preview.vatPercentage' }}</span>:
-            </div>
-            <div class="template-right template-bold">
-              {{invoice.vat}} %
-            </div>
-          </div>
-          <div class="template-extra-data-row">
-            <div class="template-left-column">
-              <span>{{ deepFind $localizedResource 'app.invoices.preview.vatValue' }}</span>:
-            </div>
-            <div class="template-right template-bold">
-              {{formatNumber invoice.tax}} {{invoice.currency.name}} </div>
-          </div>
-          <div class="template-divider">&nbsp;</div>
-          <div class="template-extra-data-row">
-            <div class="template-left-column">
-              <span style="line-height: 30px;">{{ deepFind $localizedResource 'app.invoices.preview.total' }}</span>:
-            </div>
-            <div class="template-total template-bold">
-              <span>
-                {{formatNumber invoice.totalSum}} {{invoice.currency.name}} </span>
-            </div>
-          </div>
-        </div>
-
-        <br clear="all">
-      </div>
-
-    {{#if invoice.notes}}
-      <div class="template-section" *ngIf="invoice.notes">
-          <h4 class="template-section-header">
-            {{ deepFind $localizedResource 'app.invoices.new.notes' }}
-          </h4>
-          <p>{{ invoice.notes }}</p>
-      </div>
-    {{/if}}
-
-	  {{#if invoice.summary}}
-      <div class="template-section">
-        <p>{{ invoice.summary }}</p>
-      </div>
-	  {{/if}}
-
-      <div class="template-signatures-container">
-        <div class="template-left-column">
-          <div style="padding-right: 20px;">
-            <span>{{ deepFind $localizedResource (tern invoice.type 'contract' 'app.invoices.preview.client' 'app.invoices.preview.recipient') }}</span>:
-            <span class="template-signature"></span>
-            <span class="template-bold">{{invoice.recipient}}</span>
-          </div>
-        </div>
-        <div class="template-right-column" style="text-align: left;">
-          <div style="padding-left: 20px;">
-            <span>{{ deepFind $localizedResource (tern invoice.type 'contract' 'app.invoices.preview.supplier' 'app.invoices.preview.author') }}</span>:
-            <span class="template-signature"></span>
-            <span class="template-bold">{{invoice.author}}</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-    </body>
-    </html>
+   </body>
+</html>

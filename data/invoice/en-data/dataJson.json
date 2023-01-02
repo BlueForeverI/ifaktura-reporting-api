@@ -331,7 +331,8 @@
                 "code": "Code",
                 "name": "Name",
                 "measure": "Unit",
-                "price": "Price"
+                "price": "Price",
+                "inventoryBalance": "Inventory"
             },
             "deleteProductMessage": "Are you sure you want to delete this element?",
             "new": {
@@ -348,6 +349,9 @@
                     "price": "Price",
                     "measure": "Measure",
                     "notes": "Notes",
+                    "useInventory": "Track Inventory",
+                    "inventoryBalance": "Balance",
+                    "inventoryUpdated": "Updated",
                     "create": "Create",
                     "cancel": "Cancel",
                     "save": "Save",
@@ -373,13 +377,18 @@
             },
             "columns": {
                 "number": "Number",
-                "client": "Client",
+                "client": "Client/Supplier",
                 "type": "Type",
                 "date": "Date",
                 "totalSum": "Total Sum",
                 "tax": "VAT",
                 "status": "Status",
                 "currency": "Currency"
+            },
+            "exportMenu": {
+                "title": "PDF Export",
+                "copy": "Copy",
+                "original": "Original"
             },
             "export": {
                 "number": "Invoice Number",
@@ -501,6 +510,7 @@
                 "notes": "Notes",
                 "terms": "Trade Terms",
                 "supplier": "Supplier",
+                "supplierPlaceholder": "Choose Supplier",
                 "value": "Value",
                 "discount": "Discount",
                 "taxBase": "Tax Base",
@@ -516,6 +526,8 @@
                 "invoiceTotal": "Invoice Total",
                 "recipient": "Recipient",
                 "author": "Author",
+                "orderIssuer": "Author",
+                "orderRecipient": "Recipient",
                 "createInvoice": "Create Invoice",
                 "saveInvoice": "Save Changes",
                 "clientRequired": "Please select a client",
@@ -551,6 +563,8 @@
                 "eventDate": "Event date",
                 "deadline": "Deadline",
                 "recipient": "Recipient",
+                "orderIssuer": "Author",
+                "orderRecipient": "Recipient",
                 "issuer": "Issuer",
                 "bulstat": "Bulstat",
                 "vatNumber": "VAT number",

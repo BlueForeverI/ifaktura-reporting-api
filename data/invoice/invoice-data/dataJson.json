@@ -2,7 +2,7 @@
 		"invoice": {
 			"id": 3036,
 			"number": "4012",
-			"type": "invoice",
+			"type": "expense",
 			"date": "2022-11-12T00:00:00.000000Z",
 			"deadline": null,
 			"issuedDate": "2022-11-12T00:00:00.000000Z",

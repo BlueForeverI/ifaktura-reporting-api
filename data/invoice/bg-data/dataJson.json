@@ -331,7 +331,8 @@
                 "code": "Код",
                 "name": "Име",
                 "measure": "Мерна единица",
-                "price": "Цена"
+                "price": "Цена",
+                "inventoryBalance": "Наличност"
             },
             "deleteProductMessage": "Сигурни ли сте че искате да изтриете този елемент?",
             "new": {
@@ -349,6 +350,9 @@
                     "price": "Цена",
                     "measure": "Мерна единица",
                     "notes": "Забележки",
+                    "useInventory": "Отчитай стокова наличност",
+                    "inventoryBalance": "Наличност",
+                    "inventoryUpdated": "Дата на заприходяване",
                     "create": "Създай",
                     "cancel": "Отказ",
                     "save": "Запази",
@@ -374,13 +378,18 @@
             },
             "columns": {
                 "number": "Номер",
-                "client": "Клиент",
+                "client": "Клиент/доставчик",
                 "type": "Тип",
                 "date": "Дата на събитие",
                 "totalSum": "Обща сума",
                 "tax": "Начислено ДДС",
                 "status": "Статус",
                 "currency": "Валута"
+            },
+            "exportMenu": {
+                "title": "Експорт към PDF",
+                "copy": "Копие",
+                "original": "Оригинал"
             },
             "export": {
                 "number": "Номер на фактурата",
@@ -502,6 +511,7 @@
                 "notes": "Забележки",
                 "terms": "Търговски условия",
                 "supplier": "Доставчик",
+                "supplierPlaceholder": "Избери доставчик",
                 "value": "Стойност",
                 "discount": "Отстъпка",
                 "taxBase": "Данъчна основа",
@@ -517,6 +527,8 @@
                 "invoiceTotal": "Крайна сума",
                 "recipient": "Получател",
                 "author": "Съставил",
+                "orderIssuer": "Броил",
+                "orderRecipient": "Получил",
                 "createInvoice": "Запиши",
                 "saveInvoice": "Запази промените",
                 "clientRequired": "Моля изберете клиент",
@@ -552,6 +564,8 @@
                 "eventDate": "Дата на данъчното събитие",
                 "deadline": "Краен срок",
                 "recipient": "Получател",
+                "orderIssuer": "Броил",
+                "orderRecipient": "Получил",
                 "issuer": "М.О.Л",
                 "bulstat": "ЕИК/Булстат",
                 "vatNumber": "ЗДДС №",

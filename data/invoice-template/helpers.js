@@ -1,6 +1,14 @@
 const {sDumi} = require('s-dumi');
 const {ToWords} = require('to-words');
 
+function isExpense(invoice) {
+  return invoice.type == 'expense' || invoice.type == 'debitOrder';
+}
+
+function isOrder(invoice) {
+  return invoice.type == 'debitOrder' || invoice.type == 'creditOrder';
+}
+
 function invoiceValue(invoice) {
   return invoice ? invoice.products.reduce((sum, current) => sum + current.price * current.quantity, 0) : 0;
 }
