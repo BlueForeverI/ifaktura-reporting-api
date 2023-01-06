@@ -234,7 +234,7 @@
                   <thead>
                      <tr>
                         <th>
-                           {{ deepFind $localizedResource 'app.invoices.preview.product.name' }}
+                           {{ deepFind $localizedResource (tern (isOrder invoice) true 'app.invoices.preview.product.orderName' 'app.invoices.preview.product.name') }}
                         </th>
                         <th style="text-align:center">
                            {{ deepFind $localizedResource 'app.invoices.preview.product.measure' }}
@@ -334,6 +334,7 @@
                            {{invoice.discount}} {{tern invoice.discountType 'percentage' '%' invoice.currency.name}} 
                         </div>
                      </div>
+                     {{#unless (isOrder invoice)}}
                      <div class="template-extra-data-row">
                         <div class="template-left-column">
                            <span>{{ deepFind $localizedResource 'app.invoices.preview.taxBase' }}</span>:
@@ -358,6 +359,7 @@
                            {{formatNumber invoice.tax}} {{invoice.currency.name}} 
                         </div>
                      </div>
+                    {{/unless}}
                      <div class="template-divider">&nbsp;</div>
                      <div class="template-extra-data-row">
                         <div class="template-left-column">

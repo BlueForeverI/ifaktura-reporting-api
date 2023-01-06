@@ -2,7 +2,7 @@ const {sDumi} = require('s-dumi');
 const {ToWords} = require('to-words');
 
 function isExpense(invoice) {
-  return invoice.type == 'expense' || invoice.type == 'debitOrder';
+  return invoice.type == 'expense' || invoice.type == 'creditOrder';
 }
 
 function isOrder(invoice) {

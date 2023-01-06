@@ -571,6 +571,7 @@
                 "supplier": "Supplier",
                 "product": {
                     "name": "Product name",
+                    "orderName": "Descriptipon",
                     "measure": "Unit",
                     "quantity": "Quantity",
                     "price": "Unit price",
