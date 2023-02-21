@@ -25,8 +25,16 @@ function and(a, b) {
   return a && b;
 }
 
+function or(a, b) {
+  return a || b;
+}
+
 function tern(a, b, c, d) {
   return a == b ? c : d;
+}
+
+function not(a) {
+  return !a;
 }
 
 function equals(a, b) {

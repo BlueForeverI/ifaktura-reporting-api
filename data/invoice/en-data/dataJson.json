@@ -568,6 +568,7 @@
                 "issuer": "Issuer",
                 "bulstat": "Bulstat",
                 "vatNumber": "VAT number",
+                "client": "Client",
                 "supplier": "Supplier",
                 "product": {
                     "name": "Product name",
