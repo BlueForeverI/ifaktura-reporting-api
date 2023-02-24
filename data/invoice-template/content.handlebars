@@ -20,6 +20,9 @@
       </style>
    </head>
    <body>
+      {{#if (equals @root.invoice.status 'void')}}
+         <p class="void">{{ deepFind @root.$localizedResource 'app.invoices.status.void' }}</p>
+      {{/if}}
       <div>
          <div class="template-wrapper">
             <div class="template" style="margin-top: -20px">

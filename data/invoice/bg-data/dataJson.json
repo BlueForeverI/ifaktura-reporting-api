@@ -44,6 +44,8 @@
             "newInvoice": "нов документ",
             "newClient": "нов клиент",
             "newProduct": "нов продукт",
+            "income": "Приходи",
+            "expense": "Разходи",
             "invoices": "Фактури",
             "invoiceAmounts": "Суми по фактури без включен ДДС",
             "taxAmounts": "Суми по ДДС",
@@ -52,12 +54,19 @@
             "total": "oбщо",
             "paid": "платени",
             "unpaid": "неплатени",
-            "invoicesAmount": "Суми по фактури без ДДС:",
+            "invoicesAmount": "Приходи без ДДС:",
             "expensesAmount": "Разходи без ДДС:",
-            "vat": "Сума на начислено ДДС:",
-            "expenseVat": "Сума на ДДС по разходни фактури:",
-            "unpaidCount": "Сума на неплатени фактури без ДДС:",
-            "unpaidTaxAmount": "Сума на несъбрано ДДС:",
+            "vat": "Приходи ДДС:",
+            "expenseVat": "Разходи ДДС:",
+            "unpaidCount": "Несъбрани приходи без ДДС:",
+            "unpaidExpensesNoVat": "Неплатени разходи без ДДС:",
+            "unpaidTaxAmount": "Сума несъбран ДДС:",
+            "unpaidExpenseTax": "Сума неплатен ДДС:",
+            "vatToSubmit": "ДДС за внасяне",
+            "issuedDocuments": "Видове издадени документи:",
+            "offers": "{{count}} оферти",
+            "proFormas": "{{count}} проформи",
+            "contracts": "{{count}} договори",
             "rangePicker": {
                 "thisYear": "Тази година",
                 "lastYear": "Миналата година",
@@ -275,6 +284,7 @@
         "clients": {
             "title": "Управление на клиенти",
             "search": "Търси",
+            "searchPlaceholder": "търсене по име/булстат",
             "newClient": "нов клиент",
             "columns": {
                 "name": "Име",
@@ -291,10 +301,13 @@
                 },
                 "generalInfo": {
                     "title": "Данни за фирмата",
+                    "isPhysicalEntity": "Физическо лице?",
                     "alternateLanguage": "Алтернативен език във фактурите",
                     "invoiceSequence": "Последователност на фактурите",
                     "clientName": "Име на фирма",
+                    "physicalEntityName": "Име",
                     "clientNameRequired": "Полето Име на фирма не може да бъде празно",
+                    "nameRequired": "Полето Име не може да бъде празно",
                     "bulstat": "ЕИК (Булстат)",
                     "bulstatRequired": "Полето Булстат не може да бъде празно",
                     "hasVatNumber": "Регистрация по ЗДДС",
@@ -325,6 +338,7 @@
         "products": {
             "title": "Управление на продукти",
             "search": "Търси",
+            "searchPlaceholder": "търсене по име",
             "newProduct": "нов продукт",
             "noDataMessage": "Няма намерени резултати",
             "columns": {
@@ -369,6 +383,7 @@
             "documentsTitle": "Управление на документи",
             "expensesTitle": "Управление на разходи",
             "search": "Търси",
+            "searchPlaceholder": "търсене по номер",
             "noDataMessage": "Няма намерени резултати",
             "detailedSearch": "подробно търсене",
             "newInvoice": "нов документ",
@@ -381,6 +396,7 @@
                 "client": "Клиент/доставчик",
                 "type": "Тип",
                 "date": "Дата на събитие",
+                "expenseDate": "Дата на въвеждане",
                 "totalSum": "Обща сума",
                 "tax": "Начислено ДДС",
                 "status": "Статус",
@@ -432,7 +448,12 @@
                 "all": "Всички",
                 "pending": "Неплатена",
                 "paid": "Платена",
-                "partiallyPaid": "Частично платена"
+                "partiallyPaid": "Частично платена",
+                "confirmed": "Потвърдена",
+                "unconfirmed": "Непотвърдена",
+                "signed": "Подписан",
+                "unsigned": "Неподписан",
+                "void": "Анулирана"
             },
             "paymentMethod": {
                 "cash": "В брой",
@@ -476,7 +497,8 @@
                 "title": "Нов документ",
                 "header": "Въведи информация",
                 "type": "Тип",
-                "sequence": "Пореден номер",
+                "sequence": "Кочан / партида",
+                "sequenceNumber": "Пореден номер на документ",
                 "client": "Клиент",
                 "clientPlaceholder": "Избери клиент",
                 "clientBulstat": "ЕИК (Булстат)",
@@ -538,7 +560,9 @@
                 "authorRequired": "Полето Автор е задължително",
                 "introduction": "Увод",
                 "summary": "Заключителен текст на офертата",
-                "invalidInvoiceMessage": "Има грешки при попълнените данни. Моля поправете ги, за да създадете документ."
+                "invalidInvoiceMessage": "Има грешки при попълнените данни. Моля поправете ги, за да създадете документ.",
+                "confirmed": "Потвърдена",
+                "signed": "Подписан"
             },
             "deleteInvoiceMessage": "Сигурни ли сте че искате да изтриете този елемент?",
             "update": {
@@ -554,7 +578,9 @@
                 "downloadCopy": "Свали копие",
                 "printCopyAndOriginal": "Принтирай копие + оригинал",
                 "printOriginal": "Принтирай оригинал",
-                "printCopy": "Принтирай копие"
+                "printCopy": "Принтирай копие",
+                "void": "Анулирай",
+                "restore": "Възстанови"
             },
             "preview": {
                 "edit": "Редактирай",

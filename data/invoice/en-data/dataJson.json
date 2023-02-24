@@ -44,6 +44,8 @@
             "newInvoice": "new invoice",
             "newClient": "new client",
             "newProduct": "new product",
+            "income": "Income",
+            "expense": "Expense",
             "invoices": "Invoices",
             "invoiceAmounts": "Invoices amounts (no VAT)",
             "taxAmounts": "VAT amounts",
@@ -54,10 +56,17 @@
             "unpaid": "Unpaid",
             "invoicesAmount": "Amount on invoices (no VAT):",
             "expensesAmount": "Expenses (no VAT):",
-            "vat": "VAT amount:",
+            "vat": "VAT amount:\n",
             "expenseVat": "VAT on expenses:",
             "unpaidCount": "Unpaid amount (no VAT):",
+            "unpaidExpensesNoVat": "Unpaid expenses (no VAT):",
             "unpaidTaxAmount": "VAT not received amount:",
+            "unpaidExpenseTax": "Unpaid VAT:",
+            "vatToSubmit": "VAT to submit",
+            "issuedDocuments": "Issued documents:",
+            "offers": "{{count}} offers",
+            "proFormas": "{{count}} proformas",
+            "contracts": "{{count}} contracts",
             "rangePicker": {
                 "thisYear": "This year",
                 "lastYear": "Last year",
@@ -275,6 +284,7 @@
         "clients": {
             "title": "Manage Clients",
             "search": "Search",
+            "searchPlaceholder": "name/UIC search",
             "newClient": "new client",
             "columns": {
                 "name": "Name",
@@ -325,6 +335,7 @@
         "products": {
             "title": "Manage Products",
             "search": "Search",
+            "searchPlaceholder": "name search",
             "newProduct": "new product",
             "noDataMessage": "No clients found",
             "columns": {
@@ -368,6 +379,7 @@
             "documentsTitle": "Document Management",
             "expensesTitle": "Expense Management",
             "search": "Search",
+            "searchPlaceholder": "number search",
             "noDataMessage": "No data found",
             "detailedSearch": "detailed search",
             "newInvoice": "new document",
@@ -380,6 +392,7 @@
                 "client": "Client/Supplier",
                 "type": "Type",
                 "date": "Date",
+                "expenseDate": "Data submitted",
                 "totalSum": "Total Sum",
                 "tax": "VAT",
                 "status": "Status",
@@ -476,6 +489,7 @@
                 "header": "Enter invoice data",
                 "type": "Type",
                 "sequence": "Sequence",
+                "sequenceNumber": "Document number",
                 "client": "Client",
                 "clientPlaceholder": "Choose Client",
                 "clientBulstat": "UIC (Bulstat)",
@@ -553,7 +567,9 @@
                 "downloadCopy": "Download Copy",
                 "printCopyAndOriginal": "Print Copy + Original",
                 "printOriginal": "Print Original",
-                "printCopy": "Print Copy"
+                "printCopy": "Print Copy",
+                "void": "Void",
+                "restore": "Restore"
             },
             "preview": {
                 "edit": "Edit",

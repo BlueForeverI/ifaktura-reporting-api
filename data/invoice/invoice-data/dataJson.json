@@ -12,7 +12,7 @@
 			"paymentMethod": "bankTransfer",
 			"recipient": "Ulises Reichel",
 			"author": "Иван Иванов",
-			"status": "pending",
+			"status": "void",
 			"client": {
 				"name": "Shane Miller",
 				"bulstat": "BULSTAT-Shane Miller",
