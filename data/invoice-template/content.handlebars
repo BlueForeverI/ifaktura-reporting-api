@@ -333,6 +333,7 @@
                            {{formatNumber (invoiceValue invoice)}} {{invoice.currency.name}}
                         </div>
                      </div>
+                     {{#if invoice.discount}}
                      <div class="template-extra-data-row">
                         <div class="template-left-column">
                            <span>{{ deepFind $localizedResource 'app.invoices.preview.discount' }}</span>:
@@ -341,6 +342,7 @@
                            {{invoice.discount}} {{tern invoice.discountType 'percentage' '%' invoice.currency.name}} 
                         </div>
                      </div>
+                     {{/if}}
                      {{#unless (isOrder invoice)}}
                      <div class="template-extra-data-row">
                         <div class="template-left-column">
