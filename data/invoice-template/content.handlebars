@@ -234,7 +234,7 @@
                </div>
                {{#if invoice.introduction}}
                <div class="template-section">
-                  <p>{{ invoice.introduction }}</p>
+                  <p>{{{ invoice.introduction }}}</p>
                </div>
                {{/if}}
                <table class="template-objects-table" maxsize="661">
@@ -387,12 +387,12 @@
                   <h4 class="template-section-header">
                      {{ deepFind $localizedResource 'app.invoices.new.notes' }}
                   </h4>
-                  <p>{{ invoice.notes }}</p>
+                  <p>{{{ invoice.notes }}}</p>
                </div>
                {{/if}}
                {{#if invoice.summary}}
                <div class="template-section">
-                  <p>{{ invoice.summary }}</p>
+                  <p>{{{ invoice.summary }}}</p>
                </div>
                {{/if}}
                <div class="template-signatures-container">
