@@ -108,7 +108,11 @@ function numberToWords(value, invoice, options) {
     const cents = parseInt(((value % 1) * 100).toFixed(2), 10);
     if (cents !== 0) {
       mainKeys.push(`${numbersKey}.and`);
-      const subKeys = [toWords(cents, options)];
+      const subKeys = [toWords(cents, options)
+        .replace("един", "една")
+        .replace("два", "две")
+      ];
+      console.log({subKeys});
 
       if (cents === 1) {
         subKeys.push(`${currencyKey}.subSingle`);
