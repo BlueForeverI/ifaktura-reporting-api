@@ -13,6 +13,10 @@ function invoiceValue(invoice) {
   return invoice ? invoice.products.reduce((sum, current) => sum + current.price * current.quantity, 0) : 0;
 }
 
+function toEur(amount) {
+  return (amount / 1.95583).toFixed(2)
+}
+
 function concat(a, b) {
   return a + b;
 }

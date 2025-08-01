@@ -263,8 +263,16 @@
                         <td style="width:300px;">{{ tern @root.options.shouldTranslate true translation name}}</td>
                         <td style="width:80px; text-align:center;">{{tern @root.options.shouldTranslate true measure.alternativeName measure.name}}</td>
                         <td style="width:80px; text-align:center;">{{fixedNum quantity}}</td>
-                        <td style="text-align: right;">{{formatNumber price}} {{@root.invoice.currency.name}}</td>
-                        <td style="text-align: right;">{{formatNumber (mult price quantity)}} {{@root.invoice.currency.name}}</td>
+                        <td style="text-align: right;">
+                           {{formatNumber price}} {{@root.invoice.currency.name}}
+                           <br />
+                           {{toEur price}} €&nbsp;
+                        </td>
+                        <td style="text-align: right;">
+                           {{formatNumber (mult price quantity)}} {{@root.invoice.currency.name}}
+                           <br />
+                           {{toEur (mult price quantity)}} €&nbsp;
+                        </td>
                      </tr>
                      {{/each}}
                   </tbody>
@@ -331,6 +339,8 @@
                         </div>
                         <div class="template-right template-bold">
                            {{formatNumber (invoiceValue invoice)}} {{invoice.currency.name}}
+                           <br />
+                           {{toEur (invoiceValue invoice)}} €&nbsp;
                         </div>
                      </div>
                      {{#if invoice.discount}}
@@ -350,6 +360,8 @@
                         </div>
                         <div class="template-right template-bold">
                            {{formatNumber (taxBase invoice)}} {{invoice.currency.name}}
+                           <br />
+                           {{toEur (taxBase invoice)}} €&nbsp;
                         </div>
                      </div>
                      <div class="template-extra-data-row">
@@ -357,7 +369,7 @@
                            <span>{{ deepFind $localizedResource 'app.invoices.preview.vatPercentage' }}</span>:
                         </div>
                         <div class="template-right template-bold">
-                           {{invoice.vat}} %
+                           {{invoice.vat}} %&nbsp;
                         </div>
                      </div>
                      <div class="template-extra-data-row">
@@ -366,6 +378,8 @@
                         </div>
                         <div class="template-right template-bold">
                            {{formatNumber invoice.tax}} {{invoice.currency.name}} 
+                           <br />
+                           {{toEur invoice.tax}} €&nbsp;
                         </div>
                      </div>
                     {{/unless}}
@@ -376,7 +390,10 @@
                         </div>
                         <div class="template-total template-bold">
                            <span>
-                           {{formatNumber invoice.totalSum}} {{invoice.currency.name}} </span>
+                           {{formatNumber invoice.totalSum}} {{invoice.currency.name}} 
+                           <br />
+                           {{toEur invoice.totalSum}} €&nbsp;
+                           </span>
                         </div>
                      </div>
                   </div>

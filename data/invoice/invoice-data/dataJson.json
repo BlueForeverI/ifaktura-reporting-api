@@ -40,17 +40,6 @@
 			},
 			"products": [
 				{
-					"code": "test",
-					"name": "test",
-					"price": "0.0000",
-					"quantity": "1.0000",
-					"translation": "test",
-					"measure": {
-						"name": "работни часове",
-						"alternativeName": "hours"
-					}
-				},
-				{
 					"code": "test#8",
 					"name": "test888",
 					"price": "12.0000",
@@ -59,39 +48,6 @@
 					"measure": {
 						"name": "гр.",
 						"alternativeName": "gram"
-					}
-				},
-				{
-					"code": "test",
-					"name": "test",
-					"price": "0.0000",
-					"quantity": "1.0000",
-					"translation": "test",
-					"measure": {
-						"name": "работни часове",
-						"alternativeName": "hours"
-					}
-				},
-				{
-					"code": "test",
-					"name": "test",
-					"price": "0.0000",
-					"quantity": "1.0000",
-					"translation": "test",
-					"measure": {
-						"name": "работни часове",
-						"alternativeName": "hours"
-					}
-				},
-				{
-					"code": "3434343",
-					"name": "TTT",
-					"price": "0.0000",
-					"quantity": "1.0000",
-					"translation": "ttt",
-					"measure": {
-						"name": "бр.",
-						"alternativeName": "pcs."
 					}
 				},
 				{
@@ -114,28 +70,6 @@
 					"measure": {
 						"name": "л.",
 						"alternativeName": "liter"
-					}
-				},
-				{
-					"code": "test",
-					"name": "test",
-					"price": "0.0000",
-					"quantity": "12.0000",
-					"translation": "test",
-					"measure": {
-						"name": "работни часове",
-						"alternativeName": "hours"
-					}
-				},
-				{
-					"code": "test",
-					"name": "test",
-					"price": "0.0000",
-					"quantity": "10.0000",
-					"translation": "test",
-					"measure": {
-						"name": "работни часове",
-						"alternativeName": "hours"
 					}
 				}
 			],
